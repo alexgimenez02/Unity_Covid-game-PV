@@ -13,6 +13,19 @@ public class CameraController : MonoBehaviour
         offset = transform.position - player.transform.position;
     }
 
+    /*void Update()
+    {
+	if (Input.GetKey(KeyCode.LeftArrow))
+	{
+		transform.Rotate(new Vector3(0, -40f, 0) * Time.deltaTime);
+	}
+	if (Input.GetKey(KeyCode.RightArrow))
+	{
+		transform.Rotate(new Vector3(0, 40f, 0) * Time.deltaTime);
+		tranform.position += (0, 40f, 0) * speed * Time.deltaTime; 
+	}
+    }*/
+
     // LateUpdate is called after Update each frame
     void LateUpdate()
     {
