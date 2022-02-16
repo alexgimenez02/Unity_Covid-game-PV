@@ -15,11 +15,11 @@ C:/Users/PC/Documents/GitHub/Unity_Covid-game/The covid game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64588
+64419
 Successfully changed project path to: C:/Users/PC/Documents/GitHub/Unity_Covid-game/The covid game
 C:/Users/PC/Documents/GitHub/Unity_Covid-game/The covid game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 37.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.28f1 (f5400f52e03f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
@@ -35,39 +35,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002252 seconds.
+Registered in 0.002355 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 34.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.533 seconds
+- Completed reload, in  0.520 seconds
 Domain Reload Profiling:
-	ReloadAssembly (534ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (520ms)
+		BeginReloadAssembly (59ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (386ms)
-			LoadAssemblies (84ms)
+		EndReloadAssembly (398ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
+			SetupTypeCache (130ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (143ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (148ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
+				RefreshPlugins (35ms)
 				BeforeProcessingInitializeOnLoad (8ms)
-				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadAttributes (76ms)
 				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -75,36 +75,36 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004780 seconds.
+Registered in 0.005000 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.853 seconds
+- Completed reload, in  0.884 seconds
 Domain Reload Profiling:
-	ReloadAssembly (853ms)
-		BeginReloadAssembly (135ms)
+	ReloadAssembly (885ms)
+		BeginReloadAssembly (137ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (667ms)
-			LoadAssemblies (81ms)
+		EndReloadAssembly (695ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (239ms)
+			SetupTypeCache (255ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (241ms)
+			SetupLoadedEditorAssemblies (249ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -112,15 +112,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1510 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 69.5 MB.
 System memory in use after: 69.6 MB.
 
 Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1940.
-Total: 2.471200 ms (FindLiveObjects: 0.182800 ms CreateObjectMapping: 0.058100 ms MarkObjects: 2.173000 ms  DeleteObjects: 0.056200 ms)
+Total: 2.684000 ms (FindLiveObjects: 0.141300 ms CreateObjectMapping: 0.049500 ms MarkObjects: 2.427300 ms  DeleteObjects: 0.065100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,841 +134,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/simple modular human/prefabs
-  artifactKey: Guid(1254f398e4bd22b47b78719faa1b20a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs using Guid(1254f398e4bd22b47b78719faa1b20a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0cd5acd719ad2f0e1305d4e21d4a20') in 0.024126 seconds 
-  Import took 0.027966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/simple modular human/prefabs/fireaxe_prefab.prefab
-  artifactKey: Guid(4c82e14df58323a4eab2a14cf090eac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/fireaxe_prefab.prefab using Guid(4c82e14df58323a4eab2a14cf090eac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0b64a9f2cd05f09b5e213fef4ffc42') in 0.312024 seconds 
-  Import took 0.315223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/simple modular human/source_files/Custom simple human.fbx
-  artifactKey: Guid(d83e07c47cb17454bbddbc5dd7574150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/source_files/Custom simple human.fbx using Guid(d83e07c47cb17454bbddbc5dd7574150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b78c179335b78327481e66e744c2cd1') in 1.059352 seconds 
-  Import took 1.066804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/simple modular human/source_files/put_on_legs.mask
-  artifactKey: Guid(73ea2c0b987d1cc41b57e46ac2111abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/source_files/put_on_legs.mask using Guid(73ea2c0b987d1cc41b57e46ac2111abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd269910f0339e313e2848154f4e5eea7') in 0.011239 seconds 
-  Import took 0.014972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000370 seconds.
-  path: Assets/simple modular human/prefabs/9mm_prefab.prefab
-  artifactKey: Guid(0b252c8c2ac42104aa3f45b40304bdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/9mm_prefab.prefab using Guid(0b252c8c2ac42104aa3f45b40304bdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f48c87b9329f147c626e37f42cf874') in 0.021063 seconds 
-  Import took 0.025669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/simple modular human/prefabs/phone_prefab.prefab
-  artifactKey: Guid(ed9c68deba85fbc439267aa1ae6b7fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/phone_prefab.prefab using Guid(ed9c68deba85fbc439267aa1ae6b7fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0b239b8a7d5f5f7ac993e6f2787565') in 0.111654 seconds 
-  Import took 0.115219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/simple modular human/prefabs/cigarette_prefab.prefab
-  artifactKey: Guid(374fb54b0703b7941981faf78241cc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/cigarette_prefab.prefab using Guid(374fb54b0703b7941981faf78241cc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0d6f5eadf44ccbb5a3cfe127e94c2f') in 0.112564 seconds 
-  Import took 0.115859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/simple modular human/prefabs/Custom simple human_prefab.prefab
-  artifactKey: Guid(d6112008cba14c147b799fa5f0944f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/Custom simple human_prefab.prefab using Guid(d6112008cba14c147b799fa5f0944f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44d5acb94a4476f9865bdf802030fdf') in 0.059732 seconds 
-  Import took 0.065131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/simple modular human/prefabs/crowbar_prefab.prefab
-  artifactKey: Guid(9e0f5e3a7de4bae4caaa811ad88fe796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/crowbar_prefab.prefab using Guid(9e0f5e3a7de4bae4caaa811ad88fe796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df35d69e9f6e9ac2fcb68b519ff3cd95') in 0.101386 seconds 
-  Import took 0.104695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/simple modular human/prefabs/Glock_prefab.prefab
-  artifactKey: Guid(1570851038755b342bd3393c22532f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/prefabs/Glock_prefab.prefab using Guid(1570851038755b342bd3393c22532f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de1868542a591a0069ae913088d2e3d') in 0.025078 seconds 
-  Import took 0.104435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/simple modular human/source_files/put_on_arms.mask
-  artifactKey: Guid(1dbefcac955e83a40b16d0d35536f819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/source_files/put_on_arms.mask using Guid(1dbefcac955e83a40b16d0d35536f819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '120a22606efa332eaccdcd361b84e0ef') in 0.008082 seconds 
-  Import took 0.011483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/simple modular human/source_files
-  artifactKey: Guid(08c993015dcabee42bc4e66a32ec8851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/source_files using Guid(08c993015dcabee42bc4e66a32ec8851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a817578d6f297311b861b10baedff675') in 0.006354 seconds 
-  Import took 0.009896 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.949774 seconds.
-  path: Assets/simple modular human/texture_materials
-  artifactKey: Guid(a970326df59ccad469bfd63cbc94261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials using Guid(a970326df59ccad469bfd63cbc94261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3e9fc39b283b6676b738cba4471d58') in 0.011565 seconds 
-  Import took 0.015026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.420144 seconds.
-  path: Assets/simple modular human/texture_materials/cloth
-  artifactKey: Guid(3ac7f1f21bd25c54180ef29280cffb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth using Guid(3ac7f1f21bd25c54180ef29280cffb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54409fac0a223d6efcba2e6e97069a42') in 0.008965 seconds 
-  Import took 0.013104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.711834 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket
-  artifactKey: Guid(b6a40030299ecd04f898683862ae052d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket using Guid(b6a40030299ecd04f898683862ae052d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55f910742bce686c8d6dc717dbf5edd') in 0.024415 seconds 
-  Import took 0.027218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.048956 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket.mat
-  artifactKey: Guid(095a449fdf197a1439e98381f4e5b46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket.mat using Guid(095a449fdf197a1439e98381f4e5b46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910847d29f7c3005ab33a846e3e63296') in 0.108529 seconds 
-  Import took 0.111700 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_f.png
-  artifactKey: Guid(b92b47920a20fce4ea8df4a24f1fd0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_f.png using Guid(b92b47920a20fce4ea8df4a24f1fd0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93601eebede780fb70585f539076187') in 0.051697 seconds 
-  Import took 0.054239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_i.png
-  artifactKey: Guid(c3ab963b375f11a49b731c154c962b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_i.png using Guid(c3ab963b375f11a49b731c154c962b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477a15c5a6797099cb57772dd0abe34d') in 0.015047 seconds 
-  Import took 0.017759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_c.png
-  artifactKey: Guid(cb9f19e4e2103254f82cd5753765bcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_c.png using Guid(cb9f19e4e2103254f82cd5753765bcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371874e43a3ce2c3134286ba374b61f3') in 0.019145 seconds 
-  Import took 0.022386 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_b.png
-  artifactKey: Guid(15fe044cbedf9d34fa30dd568f76c9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_b.png using Guid(15fe044cbedf9d34fa30dd568f76c9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d20fd41cf148caf622f11d86d3f080') in 0.014190 seconds 
-  Import took 0.017439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_k.png
-  artifactKey: Guid(5328464390db01d48a067fef5df5959a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_k.png using Guid(5328464390db01d48a067fef5df5959a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb0503ffc57a9f430e79b896fed4286') in 0.013482 seconds 
-  Import took 0.016656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_g.png
-  artifactKey: Guid(a0e483eba43965c408ea7ab0d2abc10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_g.png using Guid(a0e483eba43965c408ea7ab0d2abc10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de1a2dd8aa95c5d184107414e3246d0') in 0.012858 seconds 
-  Import took 0.016000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_d.png
-  artifactKey: Guid(6a6832b030bc2614b8345227168ed033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_d.png using Guid(6a6832b030bc2614b8345227168ed033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424a2a7b39201f28cb7391021c0f3275') in 0.022922 seconds 
-  Import took 0.026644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_j.png
-  artifactKey: Guid(4510f3040aebf6d4894a15a73f5e7578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_j.png using Guid(4510f3040aebf6d4894a15a73f5e7578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2dd3b43bb8c60b05afdc487a046b1f') in 0.014704 seconds 
-  Import took 0.017644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_e.png
-  artifactKey: Guid(3c9ffd422ba7ece4489f6f0f0f0a70c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_e.png using Guid(3c9ffd422ba7ece4489f6f0f0f0a70c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052f735b894c411dcb8b8fedebb32f4c') in 0.013678 seconds 
-  Import took 0.016791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_h.png
-  artifactKey: Guid(4a99af52ddfe33943bacfd6868252b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_h.png using Guid(4a99af52ddfe33943bacfd6868252b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52a4d1c5252320a984d9bd836696ade') in 0.015045 seconds 
-  Import took 0.018557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_l.png
-  artifactKey: Guid(f36886c61ddf50640b1cabff35799a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_l.png using Guid(f36886c61ddf50640b1cabff35799a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '670a6ce589713f6382b5bf774ba0308a') in 0.014215 seconds 
-  Import took 0.017645 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/jacket/jacket_a.png
-  artifactKey: Guid(ba313f723435c6e4285bb6b3e74c5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/jacket/jacket_a.png using Guid(ba313f723435c6e4285bb6b3e74c5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcae3278f60aa5d24baf8635108b0f34') in 0.012386 seconds 
-  Import took 0.015034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.750516 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1
-  artifactKey: Guid(d2e0d2f876d93494692b3943fd107588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1 using Guid(d2e0d2f876d93494692b3943fd107588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7359cdacec1a026a9ed7f41caf8df2') in 0.008428 seconds 
-  Import took 0.011348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.058525 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1.mat
-  artifactKey: Guid(9fd2ebbd37167e348a23e9419a0842c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1.mat using Guid(9fd2ebbd37167e348a23e9419a0842c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5604d431542cacc9b5edf5af673eba') in 0.022934 seconds 
-  Import took 0.025493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_c.png
-  artifactKey: Guid(dcab1b6c6a6504c4fa482ee039692435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_c.png using Guid(dcab1b6c6a6504c4fa482ee039692435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defa6cf04e4eb0773a50d0f66b6a51f7') in 0.020026 seconds 
-  Import took 0.022669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_d.png
-  artifactKey: Guid(1bcf803ae376b8846a9a7bcce4d91790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_d.png using Guid(1bcf803ae376b8846a9a7bcce4d91790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2078a2246be49cec3fb7fc1dec2c45') in 0.014094 seconds 
-  Import took 0.017259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_g.png
-  artifactKey: Guid(39d32ff08dd152540992b880ccb7099e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_g.png using Guid(39d32ff08dd152540992b880ccb7099e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167a8ea7830c473f594431212f6033f6') in 0.013595 seconds 
-  Import took 0.016928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_f.png
-  artifactKey: Guid(558236065e464c344a05860d8ab61065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_f.png using Guid(558236065e464c344a05860d8ab61065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fdb6253ab5010624bc436cfbbba71c') in 0.013961 seconds 
-  Import took 0.016622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000313 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_a.png
-  artifactKey: Guid(989f70bf829c6dc4daf89b075bafacc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_a.png using Guid(989f70bf829c6dc4daf89b075bafacc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872bb2c83270b03fa83f4be80a04d948') in 0.011510 seconds 
-  Import took 0.014464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_b.png
-  artifactKey: Guid(4830234bad9fdca4a915ad3e90084b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_b.png using Guid(4830234bad9fdca4a915ad3e90084b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a36cb54f616776cbe7ce7711c8239fd') in 0.014283 seconds 
-  Import took 0.019042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000375 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_e.png
-  artifactKey: Guid(f578c5f32f4a1194ea7aa93ecac1c8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_e.png using Guid(f578c5f32f4a1194ea7aa93ecac1c8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b436ffd5e71e4a68b5e5f42c2b658334') in 0.013824 seconds 
-  Import took 0.017380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_h.png
-  artifactKey: Guid(9045c10a813ec104e8781d478cc16654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/shoes1/shoes1_h.png using Guid(9045c10a813ec104e8781d478cc16654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c03a5b8c50d3c54f818839529f3daec') in 0.015275 seconds 
-  Import took 0.018076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.256825 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap
-  artifactKey: Guid(1fc37650859f6db4098686c3fc0f5a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap using Guid(1fc37650859f6db4098686c3fc0f5a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e732262ce942a89f7c649e6db315a48a') in 0.006991 seconds 
-  Import took 0.010803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.045187 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap.mat
-  artifactKey: Guid(170307b7bf8880c4abe949c9c1c0b382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap.mat using Guid(170307b7bf8880c4abe949c9c1c0b382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b7b36cf11c0953a59ef2298b154e05') in 0.018566 seconds 
-  Import took 0.021704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_h.png
-  artifactKey: Guid(3338d22dfea2497469f597da3f3c88b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_h.png using Guid(3338d22dfea2497469f597da3f3c88b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba41e66a3268ad0c9e22a6dd83b1fe3') in 0.014576 seconds 
-  Import took 0.017660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_l.png
-  artifactKey: Guid(5fa95f510d83af84494746777161746d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_l.png using Guid(5fa95f510d83af84494746777161746d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f22f86d30aaa4fae2422e0a2c0dd559') in 0.016713 seconds 
-  Import took 0.019899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_t.png
-  artifactKey: Guid(6b1af2b0d3cfbd341b1f0d9d3075ebb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_t.png using Guid(6b1af2b0d3cfbd341b1f0d9d3075ebb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d26a1148f699c66cbeec3f0299224c1') in 0.012612 seconds 
-  Import took 0.016225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_c.png
-  artifactKey: Guid(002323631d77d3a46a85ebcdade466b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_c.png using Guid(002323631d77d3a46a85ebcdade466b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc04188035233959b78351be9c32dfea') in 0.025028 seconds 
-  Import took 0.028608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_r.png
-  artifactKey: Guid(822200d24ad6c26458db4e6aa611899a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_r.png using Guid(822200d24ad6c26458db4e6aa611899a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44f03c3f995fb3e8f06d4f0366ea562') in 0.014577 seconds 
-  Import took 0.018390 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_s.png
-  artifactKey: Guid(e0ccbde9dfb4f9748bebfd78503ad34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_s.png using Guid(e0ccbde9dfb4f9748bebfd78503ad34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad009a5a11739863ebad430f7b6ac526') in 0.013989 seconds 
-  Import took 0.016476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_j.png
-  artifactKey: Guid(1f8d280721e4f8646be5b4cc49cf7ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_j.png using Guid(1f8d280721e4f8646be5b4cc49cf7ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2728aa229b12b20974444d1e6cff7560') in 0.025546 seconds 
-  Import took 0.028864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_o.png
-  artifactKey: Guid(7f6dd17d39c47a349a4943e573dfbd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_o.png using Guid(7f6dd17d39c47a349a4943e573dfbd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68fa13152287843c455c6e3f7700f8fe') in 0.017897 seconds 
-  Import took 0.021380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_i.png
-  artifactKey: Guid(370565c431944fd4684e0e53847792e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_i.png using Guid(370565c431944fd4684e0e53847792e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03413a7a441f5dffa287137cef5e7d3') in 0.012658 seconds 
-  Import took 0.016670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_b.png
-  artifactKey: Guid(fbdccd5a1972dce43822fe0c833e4169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_b.png using Guid(fbdccd5a1972dce43822fe0c833e4169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091f82ad582c7bb3cce9f803f2e64eae') in 0.012563 seconds 
-  Import took 0.015765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_e.png
-  artifactKey: Guid(cb9b67af640510c49a9ed579773f5015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_e.png using Guid(cb9b67af640510c49a9ed579773f5015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ef467128a27e8cd66b768c767869ec') in 0.012375 seconds 
-  Import took 0.016529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_p.png
-  artifactKey: Guid(b6831fff894d0104aad8361a4e59f651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_p.png using Guid(b6831fff894d0104aad8361a4e59f651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d88724bc085ecfb7c3a3e3ad983d37f') in 0.016365 seconds 
-  Import took 0.019402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_q.png
-  artifactKey: Guid(f8b66003b984bf646a970d33c30db51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_q.png using Guid(f8b66003b984bf646a970d33c30db51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987973ee99c1031db9a953ca60a91ecf') in 0.014259 seconds 
-  Import took 0.017560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_f.png
-  artifactKey: Guid(2556ff3db4b4fd24ba6e051d8ed51f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_f.png using Guid(2556ff3db4b4fd24ba6e051d8ed51f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a1a2ada1377b91a7d074af3957e84d') in 0.015081 seconds 
-  Import took 0.017977 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_k.png
-  artifactKey: Guid(c74fe345a7303e445ba353527eb7a257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_k.png using Guid(c74fe345a7303e445ba353527eb7a257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab071e9375439f82c19ce760748ae0f') in 0.013528 seconds 
-  Import took 0.016464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_a.png
-  artifactKey: Guid(bb238aa26ea837a49a211947d5a36121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_a.png using Guid(bb238aa26ea837a49a211947d5a36121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c65164d5fbacaebf6ed3053d70860b5') in 0.018573 seconds 
-  Import took 0.021145 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_d.png
-  artifactKey: Guid(8d0c1f28c2bec7d43baf8a8cdeea05b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_d.png using Guid(8d0c1f28c2bec7d43baf8a8cdeea05b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1adad49468a8e612d8ccb313ce8050cd') in 0.013394 seconds 
-  Import took 0.016234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/simple modular human/texture_materials/cloth/cap/cap_g.png
-  artifactKey: Guid(fe9f38913097c0a4db86dc027a4ae153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/cloth/cap/cap_g.png using Guid(fe9f38913097c0a4db86dc027a4ae153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246f551073faf7245f776ff621ed9742') in 0.018557 seconds 
-  Import took 0.021365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.840789 seconds.
-  path: Assets/simple modular human/texture_materials/hair
-  artifactKey: Guid(7824c7d1c8c2bfd4190eb3ec33c5d4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair using Guid(7824c7d1c8c2bfd4190eb3ec33c5d4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8921b4856da51cda8279c09b56bd612') in 0.011340 seconds 
-  Import took 0.013944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.017331 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a
-  artifactKey: Guid(078ccc3754aa9234dafb483624956cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a using Guid(078ccc3754aa9234dafb483624956cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb017c2c731bf6c5598c6273b3ca6cef') in 0.007912 seconds 
-  Import took 0.011313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027677 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/hair_a.mat
-  artifactKey: Guid(9ffa9ebbb4b63804fbe234fe18d8016a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/hair_a.mat using Guid(9ffa9ebbb4b63804fbe234fe18d8016a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea33dadc8fd0679510e6daa34f7cba62') in 0.019408 seconds 
-  Import took 0.022167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_c.png
-  artifactKey: Guid(f44f4c78cb15f2f4ebb711e675e5bb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_c.png using Guid(f44f4c78cb15f2f4ebb711e675e5bb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b82719b575021e98d332b567aca748') in 0.014899 seconds 
-  Import took 0.017781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_a.png
-  artifactKey: Guid(8719f4fc3096582429bc50c9310e616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_a.png using Guid(8719f4fc3096582429bc50c9310e616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f5eebaf059bfe33b4d2b592929d39c') in 0.012337 seconds 
-  Import took 0.015102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_e.png
-  artifactKey: Guid(7a7c4108be3f29546968a24915dc7566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_e.png using Guid(7a7c4108be3f29546968a24915dc7566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da54b96cbcce5135b663c505b9781956') in 0.013299 seconds 
-  Import took 0.016716 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_f.png
-  artifactKey: Guid(7c7aa5feefe905944b08b69cb9d73f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_f.png using Guid(7c7aa5feefe905944b08b69cb9d73f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4ea62b918c73a01d6e2e2ca33830db') in 0.011948 seconds 
-  Import took 0.016136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_d.png
-  artifactKey: Guid(76a36fcd5aea2664484dfa35dc26ea47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_d.png using Guid(76a36fcd5aea2664484dfa35dc26ea47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528d8192774ca8a777171e1a436b0111') in 0.013602 seconds 
-  Import took 0.017998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_b.png
-  artifactKey: Guid(dc44ae24bf13a604a986f7f419978f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_a/Hair_a_b.png using Guid(dc44ae24bf13a604a986f7f419978f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c63a72be82be228aeb188d3bad25877') in 0.011881 seconds 
-  Import took 0.016047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.932138 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_e
-  artifactKey: Guid(b192109b137787648b1e997e76f9dd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_e using Guid(b192109b137787648b1e997e76f9dd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fedd04bab4ecdc421f660b731d1a147') in 0.008681 seconds 
-  Import took 0.011948 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.046243 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_e/hair_e.mat
-  artifactKey: Guid(b5f33df3fd46b8c4eb38840fc424675f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_e/hair_e.mat using Guid(b5f33df3fd46b8c4eb38840fc424675f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c32ccb3a0a7e2ae87242f49ed2af4f6') in 0.014994 seconds 
-  Import took 0.017960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_e/hair_e_a.png
-  artifactKey: Guid(351729d7c080dd145a1c7d69dd9aacb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_e/hair_e_a.png using Guid(351729d7c080dd145a1c7d69dd9aacb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb727dc4f001821c00bf87b75a04ca3') in 0.015427 seconds 
-  Import took 0.017834 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_e/hair_e_b.png
-  artifactKey: Guid(f460e4d8cb740094b90fc448b2db921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_e/hair_e_b.png using Guid(f460e4d8cb740094b90fc448b2db921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37215387509e07a7a502d33fc4cc31e') in 0.014899 seconds 
-  Import took 0.018006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/simple modular human/texture_materials/hair/hair_e/hair_e_c.png
-  artifactKey: Guid(6f3d88fd9e7993547b4f5c5c7730235e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/hair/hair_e/hair_e_c.png using Guid(6f3d88fd9e7993547b4f5c5c7730235e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e094de2f7e9bce3892cafbec37338f') in 0.019454 seconds 
-  Import took 0.022099 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.991960 seconds.
-  path: Assets/simple modular human/texture_materials/beard
-  artifactKey: Guid(1b26e61cd8b9bdb44a5243947db02bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/beard using Guid(1b26e61cd8b9bdb44a5243947db02bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aac37ae4b6ddbf274b078c4fdc98c17') in 0.007188 seconds 
-  Import took 0.011059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.048888 seconds.
-  path: Assets/simple modular human/texture_materials/beard/beard.mat
-  artifactKey: Guid(84accf9a944057d488818bb5cf08433c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/beard/beard.mat using Guid(84accf9a944057d488818bb5cf08433c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041e772a1dcf19aee5ad85b6f030c97a') in 0.014971 seconds 
-  Import took 0.017492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/simple modular human/texture_materials/beard/beard_a.png
-  artifactKey: Guid(a80a879060689e94d9f85c85092a6b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/beard/beard_a.png using Guid(a80a879060689e94d9f85c85092a6b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d7038a877eba3a1cd6b52e0b921431') in 0.013280 seconds 
-  Import took 0.016110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/simple modular human/texture_materials/beard/beard_b.png
-  artifactKey: Guid(95318fc4a242beb4190015a480789644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/beard/beard_b.png using Guid(95318fc4a242beb4190015a480789644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f58f00d737f9b896752eb6ec83dbe2') in 0.013520 seconds 
-  Import took 0.016455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/simple modular human/texture_materials/beard/beard_c.png
-  artifactKey: Guid(73f6446de9814f249911d127d0921a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/beard/beard_c.png using Guid(73f6446de9814f249911d127d0921a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942ab56ceac56378b5ac099517bbdc8e') in 0.011978 seconds 
-  Import took 0.015601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.465859 seconds.
-  path: Assets/simple modular human/texture_materials/skins
-  artifactKey: Guid(512bfea902e72b749bef16783342ad62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins using Guid(512bfea902e72b749bef16783342ad62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64b650dc5355adbc8173352efe13edc') in 0.008269 seconds 
-  Import took 0.012369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.058325 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin.mat
-  artifactKey: Guid(876cdc4b3d56a2844975177a3a879816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin.mat using Guid(876cdc4b3d56a2844975177a3a879816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b45bc605b430c5384a264a2eeb6149b') in 0.032043 seconds 
-  Import took 0.034848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin_white_brown.png
-  artifactKey: Guid(ceabbdf01d99c5a4e956fde76c95c2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin_white_brown.png using Guid(ceabbdf01d99c5a4e956fde76c95c2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99bc6ea0c944c1618a6669186791c52e') in 0.041633 seconds 
-  Import took 0.044451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin_Lightbrown_brown.png
-  artifactKey: Guid(333350cce72d80c43886bad96861b7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin_Lightbrown_brown.png using Guid(333350cce72d80c43886bad96861b7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8307135d3fad54e0d9e6e669adadb73') in 0.014742 seconds 
-  Import took 0.018072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin_brown_brown.png
-  artifactKey: Guid(1a546b27e2a47c1489b477172c21c6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin_brown_brown.png using Guid(1a546b27e2a47c1489b477172c21c6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c404f670c5df74456f9cef55c9f2615') in 0.012603 seconds 
-  Import took 0.015554 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin_white_blue.png
-  artifactKey: Guid(4d9d136347a3d9e48b1e59a2e36ae2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin_white_blue.png using Guid(4d9d136347a3d9e48b1e59a2e36ae2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c55a5b1fed429a7a810288f82c8101') in 0.014328 seconds 
-  Import took 0.017776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin_white_grey.png
-  artifactKey: Guid(0537cfc3f11c8474b8081eace277fb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin_white_grey.png using Guid(0537cfc3f11c8474b8081eace277fb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '418130945d92163fe7317f842c1c040b') in 0.012445 seconds 
-  Import took 0.015396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/simple modular human/texture_materials/skins/skin_white_green.png
-  artifactKey: Guid(e7a209c30ebd76d42ae49d88620e5004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/skins/skin_white_green.png using Guid(e7a209c30ebd76d42ae49d88620e5004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b0b6c85bb465d52c4f8132bbbb0be9') in 0.014191 seconds 
-  Import took 0.018972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.249039 seconds.
-  path: Assets/simple modular human/texture_materials/props
-  artifactKey: Guid(3bf3748b848721446a94359f25b75264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props using Guid(3bf3748b848721446a94359f25b75264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c79b6062581328d892c963d9a4b5e7') in 0.010352 seconds 
-  Import took 0.013891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034777 seconds.
-  path: Assets/simple modular human/texture_materials/props/9mm_bullet.mat
-  artifactKey: Guid(f8103c3e099bacf42a20d6539f90ec2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/9mm_bullet.mat using Guid(f8103c3e099bacf42a20d6539f90ec2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e673fcb03556171c4213d8fe91bad3d6') in 0.015442 seconds 
-  Import took 0.017802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/simple modular human/texture_materials/props/crowbar.png
-  artifactKey: Guid(7ac4f5ed7cdae3a4b9389dbce4854c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/crowbar.png using Guid(7ac4f5ed7cdae3a4b9389dbce4854c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d35d8a82b397788ad2eb109054b6b7') in 0.010653 seconds 
-  Import took 0.013040 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/simple modular human/texture_materials/props/cigarette.mat
-  artifactKey: Guid(0cd757c823ce2d44bbec5c11cdc1b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/cigarette.mat using Guid(0cd757c823ce2d44bbec5c11cdc1b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bee7f3cc2278670f3c55cd1f930967') in 0.010556 seconds 
-  Import took 0.014633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/simple modular human/texture_materials/props/phone.png
-  artifactKey: Guid(636736c3d56784a4ba15fa73a007f24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/phone.png using Guid(636736c3d56784a4ba15fa73a007f24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a301c51cee0915c7aefe610bedf533b9') in 0.010910 seconds 
-  Import took 0.013591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/simple modular human/texture_materials/props/glock.png
-  artifactKey: Guid(1ccd0287cbe36234cb48f11c3ffa2e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/glock.png using Guid(1ccd0287cbe36234cb48f11c3ffa2e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31fd88bc3f147be6db73a7302c80e6e') in 0.012276 seconds 
-  Import took 0.015198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/simple modular human/texture_materials/props/cigarette_emission.png
-  artifactKey: Guid(c0e961376df90c24b85a28d332b15a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/cigarette_emission.png using Guid(c0e961376df90c24b85a28d332b15a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ab2db6189afe36a364abfb57623c7b') in 0.013167 seconds 
-  Import took 0.016622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/simple modular human/texture_materials/props/glock.mat
-  artifactKey: Guid(bf4f9dc2617dba846a47596715e80686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/glock.mat using Guid(bf4f9dc2617dba846a47596715e80686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d190dcc50d949c4a71c064fb215bf4') in 0.012655 seconds 
-  Import took 0.015506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/simple modular human/texture_materials/props/fireaxe.mat
-  artifactKey: Guid(611623c1e5fb2564ca492113868b1d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/fireaxe.mat using Guid(611623c1e5fb2564ca492113868b1d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53af1b4ec25cf15496beea04fe43a6dc') in 0.013331 seconds 
-  Import took 0.016364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/simple modular human/texture_materials/props/cigarette.png
-  artifactKey: Guid(54492cb55867b5a45b265f82912b960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/cigarette.png using Guid(54492cb55867b5a45b265f82912b960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f32da3ebbcb83e0484b8b42bd919563') in 0.009613 seconds 
-  Import took 0.012655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/simple modular human/texture_materials/props/9mm_bullet.png
-  artifactKey: Guid(041b16bb1aa0738459fe2295f0d5251d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/9mm_bullet.png using Guid(041b16bb1aa0738459fe2295f0d5251d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18ff7332bcce820665ace2645547525') in 0.015498 seconds 
-  Import took 0.019494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/simple modular human/texture_materials/props/fireaxe.png
-  artifactKey: Guid(efc8af9eefe77d24fa6721436d9822ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/fireaxe.png using Guid(efc8af9eefe77d24fa6721436d9822ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f77ef0a661c1b54192595ae80fc9afd') in 0.008595 seconds 
-  Import took 0.011172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/simple modular human/texture_materials/props/phone.mat
-  artifactKey: Guid(aafc8c09d7c070d4ea0b307004f87cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/phone.mat using Guid(aafc8c09d7c070d4ea0b307004f87cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3a9ae5dd85ba65efe064faee1742f3') in 0.012777 seconds 
-  Import took 0.016172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/simple modular human/texture_materials/props/crowbar.mat
-  artifactKey: Guid(89d8db267ef356a4fa44cb55f5703538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/props/crowbar.mat using Guid(89d8db267ef356a4fa44cb55f5703538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b339e59726482f3f76f6e2b47282a8') in 0.011383 seconds 
-  Import took 0.015027 seconds .
+  path: Assets/CameraController.cs
+  artifactKey: Guid(d5c69ea840d2d77429cf2247756f5ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraController.cs using Guid(d5c69ea840d2d77429cf2247756f5ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3965b7dadef67b9159eb50d0fc6d5dbf') in 0.039386 seconds 
+  Import took 0.042641 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006603 seconds.
+Registered in 1.071038 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.093 seconds
+- Completed reload, in  4.545 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1094ms)
-		BeginReloadAssembly (143ms)
+	ReloadAssembly (4545ms)
+		BeginReloadAssembly (196ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (876ms)
-			LoadAssemblies (114ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (4293ms)
+			LoadAssemblies (2197ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (311ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (315ms)
+			SetupTypeCache (1083ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (983ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (222ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (637ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.7 MB.
-System memory in use after: 86.8 MB.
+System memory in use before: 69.4 MB.
+System memory in use after: 69.5 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1997.
-Total: 3.331600 ms (FindLiveObjects: 0.521100 ms CreateObjectMapping: 0.203500 ms MarkObjects: 2.572900 ms  DeleteObjects: 0.033300 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1942.
+Total: 2.266500 ms (FindLiveObjects: 0.116700 ms CreateObjectMapping: 0.045600 ms MarkObjects: 2.084800 ms  DeleteObjects: 0.018500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -981,219 +197,231 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 287.849663 seconds.
-  path: Assets/CameraController.cs
-  artifactKey: Guid(d5c69ea840d2d77429cf2247756f5ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CameraController.cs using Guid(d5c69ea840d2d77429cf2247756f5ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0f053913e59672e6a80c424c1353d6') in 0.032333 seconds 
-  Import took 0.036880 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014590 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Domain Reload Profiling:
+	ReloadAssembly (887ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (722ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (264ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.4 MB.
+System memory in use after: 69.5 MB.
 
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1944.
+Total: 4.749500 ms (FindLiveObjects: 0.291800 ms CreateObjectMapping: 0.094100 ms MarkObjects: 4.310800 ms  DeleteObjects: 0.050500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 631.350708 seconds.
-  path: Assets/simple modular human/scripts
-  artifactKey: Guid(66b0084a4c2b2fc49bd4cea84a353d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/scripts using Guid(66b0084a4c2b2fc49bd4cea84a353d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31351a38dd7ec351231635d3fd9ca03a') in 0.086835 seconds 
-  Import took 0.091789 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010602 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.855 seconds
+Domain Reload Profiling:
+	ReloadAssembly (855ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (697ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (236ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.4 MB.
+System memory in use after: 69.6 MB.
 
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1946.
+Total: 3.306400 ms (FindLiveObjects: 0.143200 ms CreateObjectMapping: 0.045000 ms MarkObjects: 3.094900 ms  DeleteObjects: 0.022300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 3.162655 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures
-  artifactKey: Guid(b2c16fa1d4369ff42802147980304e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures using Guid(b2c16fa1d4369ff42802147980304e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4fd5b88dede462129c137dd022bc25') in 0.008792 seconds 
-  Import took 0.012227 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004509 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.831 seconds
+Domain Reload Profiling:
+	ReloadAssembly (831ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (668ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (164ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
 
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1948.
+Total: 2.582400 ms (FindLiveObjects: 0.140000 ms CreateObjectMapping: 0.050000 ms MarkObjects: 2.373700 ms  DeleteObjects: 0.018000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.065578 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/bench.mat
-  artifactKey: Guid(133697a032ae7a94499655c20da6adb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/bench.mat using Guid(133697a032ae7a94499655c20da6adb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4ab89429d70f1fbde0b91c695500d0') in 0.189901 seconds 
-  Import took 0.193467 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004657 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.847 seconds
+Domain Reload Profiling:
+	ReloadAssembly (847ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (685ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (228ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/chair.png
-  artifactKey: Guid(34322cbb84261bd418a4be9fb967f679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/chair.png using Guid(34322cbb84261bd418a4be9fb967f679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb90ad8e229f2a94d3ffd504cfd4caf') in 0.025394 seconds 
-  Import took 0.028030 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1950.
+Total: 2.433200 ms (FindLiveObjects: 0.151500 ms CreateObjectMapping: 0.044200 ms MarkObjects: 2.219200 ms  DeleteObjects: 0.017500 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/bin.png
-  artifactKey: Guid(629a975e08230b44686dd03ca38ce52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/bin.png using Guid(629a975e08230b44686dd03ca38ce52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6c2bf829be8269cd5cd13112b5bdea') in 0.023315 seconds 
-  Import took 0.026256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid.mat
-  artifactKey: Guid(757a2dadf432e534a8aa7fc413666b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid.mat using Guid(757a2dadf432e534a8aa7fc413666b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a930ed4de54cea5ca4fd6353fffcd53e') in 0.163375 seconds 
-  Import took 0.166480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid.png
-  artifactKey: Guid(7e9f26d57b10d1a4ebc686d40e96bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid.png using Guid(7e9f26d57b10d1a4ebc686d40e96bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e67f16a946e195fe40f5e4207bc1170') in 0.011098 seconds 
-  Import took 0.013936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/bin.mat
-  artifactKey: Guid(02ac03e5ad810f848bfc1b3f3017d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/bin.mat using Guid(02ac03e5ad810f848bfc1b3f3017d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ed4e0b575f8b8fade78d7e92a74d19') in 0.027591 seconds 
-  Import took 0.031879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/steal_point.mat
-  artifactKey: Guid(531d903dfe470ed45b8d2cf460a11898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/steal_point.mat using Guid(531d903dfe470ed45b8d2cf460a11898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b6dbf965b06ef8736a445d39075554c') in 0.019004 seconds 
-  Import took 0.022668 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/sweet_machine.mat
-  artifactKey: Guid(c61d2e4d54e38e24ab35893f01591c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/sweet_machine.mat using Guid(c61d2e4d54e38e24ab35893f01591c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0557e8114ddedd8be624e832852a12') in 0.033430 seconds 
-  Import took 0.036420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/umbrella.png
-  artifactKey: Guid(0ef3cc39c7156f648a3e3115e1f57278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/umbrella.png using Guid(0ef3cc39c7156f648a3e3115e1f57278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e9a134adf8739390286ad7a87826e3') in 0.045389 seconds 
-  Import took 0.047720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/tree.mat
-  artifactKey: Guid(cf6578c7dd60a874c9be01dcc0c2d071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/tree.mat using Guid(cf6578c7dd60a874c9be01dcc0c2d071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169d5afdd6bc41a5ea0ec083841e7088') in 0.013100 seconds 
-  Import took 0.015883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/wood.mat
-  artifactKey: Guid(fa950b7475ac6ad4081375e0b73b4ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/wood.mat using Guid(fa950b7475ac6ad4081375e0b73b4ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21eb3e439221d48f0ed1c98726626752') in 0.026163 seconds 
-  Import took 0.028833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid2.png
-  artifactKey: Guid(fe237327f51b0cd41b3abbbc4a43e06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid2.png using Guid(fe237327f51b0cd41b3abbbc4a43e06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66529042b53a27d63dad58525ce86f5b') in 0.019890 seconds 
-  Import took 0.022413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/chair.mat
-  artifactKey: Guid(dfd6e66c288cef34aa2c76e9773def30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/chair.mat using Guid(dfd6e66c288cef34aa2c76e9773def30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5d2ba8f30d99a1e8db61db05906b0e') in 0.024398 seconds 
-  Import took 0.027487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/table.mat
-  artifactKey: Guid(75209bfd26c2e3d48903c9298c37a29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/table.mat using Guid(75209bfd26c2e3d48903c9298c37a29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7854095580a1d79f15dd4a97d622d24') in 0.016274 seconds 
-  Import took 0.019265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/sitting_point.mat
-  artifactKey: Guid(39764062c7287d94e8491bb43e315628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/sitting_point.mat using Guid(39764062c7287d94e8491bb43e315628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef192aa672db815d9b76be54e1786fc3') in 0.011687 seconds 
-  Import took 0.014768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/table.png
-  artifactKey: Guid(d6372d05dbaa5284abd27d3459d880ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/table.png using Guid(d6372d05dbaa5284abd27d3459d880ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bdbf85e0d65ea7d46b958ceace7deda') in 0.010366 seconds 
-  Import took 0.013568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid2.mat
-  artifactKey: Guid(a2a41d0fe5c9eff4da1be3e84677b45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/grid2.mat using Guid(a2a41d0fe5c9eff4da1be3e84677b45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764d0afc9f8f318a2959baf6dcaf1ad3') in 0.017863 seconds 
-  Import took 0.021220 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/pickup_point.mat
-  artifactKey: Guid(78f20bf221527fb498fbcd3f789a53cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/pickup_point.mat using Guid(78f20bf221527fb498fbcd3f789a53cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd6ce26e05d952a919b4434972f850e') in 0.019219 seconds 
-  Import took 0.022587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/sweet_machine.png
-  artifactKey: Guid(17e21bb0d80971b4595584c1a737a332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/sweet_machine.png using Guid(17e21bb0d80971b4595584c1a737a332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9499089e80f7cca986d385b93a056321') in 0.017303 seconds 
-  Import took 0.020772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/umbrella.mat
-  artifactKey: Guid(8b64ac7ad7e775a4f9fdba4301e1593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/umbrella.mat using Guid(8b64ac7ad7e775a4f9fdba4301e1593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d7aea9d45dd0c8622cbb3970ba444d') in 0.012910 seconds 
-  Import took 0.016774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/tree.png
-  artifactKey: Guid(6253f75045098cb4e996a6bf4966b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/tree.png using Guid(6253f75045098cb4e996a6bf4966b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fbf85631df1713ef3b2cb11413f104') in 0.092637 seconds 
-  Import took 0.098940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000802 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/bench.png
-  artifactKey: Guid(77b277cf32b3db94c85b4fd2053fdff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/bench.png using Guid(77b277cf32b3db94c85b4fd2053fdff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cb47b792f64771f06c75c8fffa3c69') in 0.034181 seconds 
-  Import took 0.038755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/Walk_point.mat
-  artifactKey: Guid(b8c4a681402417940b688251ce9aa554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/Walk_point.mat using Guid(b8c4a681402417940b688251ce9aa554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df249e018b8af702823f8f533fa5fe4') in 0.057326 seconds 
-  Import took 0.059498 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/simple modular human/texture_materials/test_terrain_materials_textures/glass.mat
-  artifactKey: Guid(bdb453fe8a2ad554ab2e10daf54f3713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/simple modular human/texture_materials/test_terrain_materials_textures/glass.mat using Guid(bdb453fe8a2ad554ab2e10daf54f3713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4039d3d4dd7c832a673959980c003a') in 0.027266 seconds 
-  Import took 0.030055 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
