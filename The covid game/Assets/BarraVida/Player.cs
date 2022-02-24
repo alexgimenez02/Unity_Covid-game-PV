@@ -12,7 +12,12 @@ public class Player : MonoBehaviour
 
 	public HealthBar healthBar;
 	public ProtectionBar procBar;
+	public Gel gel;
 	public GameObject person;
+	
+
+
+	private string textGel;
 	private Vector3 prev_position;
 	private Transform transform;
 
@@ -24,26 +29,47 @@ public class Player : MonoBehaviour
 		procBar.SetMaxProtection(maxProtection);
 		currentProtection = 20f;
 		transform = person.transform;
+		gel.setUnidades(2);
+		textGel = "0 u";
     }
-
 	// Update is called once per frame
 	void Update()
 	{
+		if (currentHealth <= 0)
+		{
 
-		if (prev_position == null)
-		{
-			prev_position = transform.position;
-		}
-		
-		if (currentProtection > 0)
-		{
-			LossProtection(Time.deltaTime);
+			//Application.LoadLevel("Game over");
+			//Hacer sleep
+			Application.LoadLevel("Main menu");
+
 		}
 		else
 		{
-			TakeDamage(Time.deltaTime + Mathf.Abs((prev_position.x - transform.position.x) + (prev_position.y - transform.position.y) + (prev_position.y - transform.position.y)));
+			if (prev_position == null)
+			{
+				prev_position = transform.position;
+			}
+
+			if (currentProtection > 0)
+			{
+				LossProtection(Time.deltaTime);
+			}
+			else
+			{
+				TakeDamage(Time.deltaTime + Mathf.Abs((prev_position.x - transform.position.x) + (prev_position.y - transform.position.y) + (prev_position.y - transform.position.y)));
+			}
+			prev_position = transform.position;
+
+
+
+
+			if (Input.GetKey(KeyCode.Keypad4))
+			{
+				gel.quitarUnidades();
+				gel.devolverTexto();
+				
+			}
 		}
-		prev_position = transform.position;
 	}
 	void TakeDamage(float damage)
 	{
