@@ -18,9 +18,6 @@ public class Player : MonoBehaviour
 	public Mascarilla mascarillaFibra;
 	public GameObject person;
 	
-
-
-	
 	private Vector3 prev_position;
 	private Transform transform;
 
@@ -32,11 +29,10 @@ public class Player : MonoBehaviour
 		healthBar.SetMaxHealth(maxHealth);
 		procBar.SetMaxProtection(maxProtection);
 		
-		//mascarillaPapel.numMasks();
-		
-		//mascarillaPlastico.numMasks();	
-		//mascarillaFibra.numMasks();
-		currentProtection = 0; 
+		mascarillaPapel.numMasks();
+		mascarillaPlastico.numMasks();	
+		mascarillaFibra.numMasks();
+		currentProtection = 20; 
 		transform = person.transform;
 		gel.setUnidades(2); 
 		
@@ -73,17 +69,20 @@ public class Player : MonoBehaviour
 
 
 			if(Input.GetKeyDown(KeyCode.Alpha1)){
-				currentProtection = mascarillaPapel.getProtection();
-				procBar.SetProtection(currentProtection);
-				mascarillaPapel.lossMascarilla();
+				if(mascarillaPapel.lossMascarilla()){
+					currentProtection = mascarillaPapel.getProtection();
+					procBar.SetProtection(currentProtection);
+				}
 			} else if(Input.GetKeyDown(KeyCode.Alpha2)){
-				currentProtection = mascarillaPlastico.getProtection();
-				procBar.SetProtection(currentProtection);
-				mascarillaPlastico.lossMascarilla();
+				if(mascarillaPlastico.lossMascarilla()){
+					currentProtection = mascarillaPlastico.getProtection();
+					procBar.SetProtection(currentProtection);
+				}
 			} else if(Input.GetKeyDown(KeyCode.Alpha3)){
-				currentProtection = mascarillaFibra.getProtection();
-				procBar.SetProtection(currentProtection);
-				mascarillaFibra.lossMascarilla();
+				if(mascarillaFibra.lossMascarilla()){
+					currentProtection = mascarillaFibra.getProtection();
+					procBar.SetProtection(currentProtection);
+				}
 			}
 			else if (Input.GetKeyDown(KeyCode.Alpha4))
 			{
