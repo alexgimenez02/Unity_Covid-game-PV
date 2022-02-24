@@ -13,24 +13,33 @@ public class Player : MonoBehaviour
 	public HealthBar healthBar;
 	public ProtectionBar procBar;
 	public Gel gel;
+	public Mascarilla mascarillaPapel;
+	public Mascarilla mascarillaPlastico;
+	public Mascarilla mascarillaFibra;
 	public GameObject person;
 	
 
 
-	private string textGel;
+	
 	private Vector3 prev_position;
 	private Transform transform;
 
     // Start is called before the first frame update
     void Start()
     {
+		
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
 		procBar.SetMaxProtection(maxProtection);
-		currentProtection = 20f;
+		
+		//mascarillaPapel.numMasks();
+		
+		//mascarillaPlastico.numMasks();	
+		//mascarillaFibra.numMasks();
+		currentProtection = 0; 
 		transform = person.transform;
-		gel.setUnidades(2);
-		textGel = "0 u";
+		gel.setUnidades(2); 
+		
     }
 	// Update is called once per frame
 	void Update()
@@ -40,7 +49,8 @@ public class Player : MonoBehaviour
 
 			//Application.LoadLevel("Game over");
 			//Hacer sleep
-			Application.LoadLevel("Main menu");
+			//Application.LoadLevel("Main menu");
+			Debug.Log("Hp = 0");
 
 		}
 		else
@@ -62,12 +72,23 @@ public class Player : MonoBehaviour
 
 
 
-
-			if (Input.GetKey(KeyCode.Keypad4))
+			if(Input.GetKeyDown(KeyCode.Alpha1)){
+				currentProtection = mascarillaPapel.getProtection();
+				procBar.SetProtection(currentProtection);
+				mascarillaPapel.lossMascarilla();
+			} else if(Input.GetKeyDown(KeyCode.Alpha2)){
+				currentProtection = mascarillaPlastico.getProtection();
+				procBar.SetProtection(currentProtection);
+				mascarillaPlastico.lossMascarilla();
+			} else if(Input.GetKeyDown(KeyCode.Alpha3)){
+				currentProtection = mascarillaFibra.getProtection();
+				procBar.SetProtection(currentProtection);
+				mascarillaFibra.lossMascarilla();
+			}
+			else if (Input.GetKeyDown(KeyCode.Alpha4))
 			{
-				gel.quitarUnidades();
-				gel.devolverTexto();
-				
+				if(gel.quitarUnidades())
+					currentProtection += 15f;
 			}
 		}
 	}

@@ -7,23 +7,24 @@ public class Gel : MonoBehaviour
 {
     public int unidades;
     public int cantidad = 15;
-    public Text geltxt;
+    public TextUnit txt;
+    
 
     public void setUnidades(int u)
     {
         unidades = u;
+        txt.modifyText(unidades);
     }
-    public void quitarUnidades()
+    public bool quitarUnidades()
     {
         if (unidades > 0)
         {
             unidades--;
+            txt.modifyText(unidades);
+            return true;
         }
+        return false;
         
     }
-    public void devolverTexto()
-    {
-        geltxt.text = unidades + " u";
-        
-    }
+    
 }
