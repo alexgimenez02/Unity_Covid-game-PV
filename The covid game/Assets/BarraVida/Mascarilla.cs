@@ -6,36 +6,32 @@ public class Mascarilla : MonoBehaviour
 {
     public int maskType; //1 -> papel, 2 -> plastico, 3 -> fibra
     private float[] protection = {100f / 4f, 100f / 2f, 100f};
+    private int[] prices = {10,50,100};
     public TextUnit txt;
     public int unit;
+    public Money money;
 
     public float getProtection(){
-        Debug.Log(protection);
         return protection[maskType - 1];
     }
 
     public bool lossMascarilla(){
-        string actual_units = txt.getText();
-        Debug.Log(actual_units);
-        string[] split_text = actual_units.Split(" "[0]);
-        int units = int.Parse(split_text[0]);
-        if(units > 0)
-            txt.modifyText(--units);
+        
+        if(unit > 0){
+            txt.modifyText(--unit);
             return true;
+        }
         return false;
 
     }
     public void addMascarilla(){
-        string actual_units = txt.getText();
-        Debug.Log(actual_units);
-        string[] split_text = actual_units.Split(" "[0]);
-        int units = int.Parse(split_text[0]);
-        if(units > 0)
-            txt.modifyText(++units);
+        if(money.checkMoney(prices[maskType - 1]))
+            txt.modifyText(++unit);
+        
     }
 
     public void numMasks(){
         txt.modifyText(unit);
-        Debug.Log("Test numMasks en mascarilla: " + maskType);
+        
     }
 }
