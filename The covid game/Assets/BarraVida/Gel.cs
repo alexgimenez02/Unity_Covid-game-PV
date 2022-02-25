@@ -8,6 +8,7 @@ public class Gel : MonoBehaviour
     public int unidades;
     public int cantidad = 15;
     public TextUnit txt;
+    public Money money;
     
 
     public void setUnidades(int u)
@@ -27,7 +28,8 @@ public class Gel : MonoBehaviour
     }
     public void addUnidades()
     {
-        txt.modifyText(++unidades);
+        if(money.checkMoney(5))
+            txt.modifyText(++unidades);
     }
     
 }

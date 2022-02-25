@@ -18,6 +18,8 @@ public class Player_UI : MonoBehaviour
 	public Mascarilla mascarillaFibra;
 	public GameObject person;
 	public UI_Shop shop;
+	public GameObject camera;
+	public Money money;
 	
 	private Vector3 prev_position;
 	private Transform transform;
@@ -37,7 +39,7 @@ public class Player_UI : MonoBehaviour
 		gel.setUnidades(2); 
 		shop.SleepShop();
 		toggleShop = false;
-		
+		money.readMoney();
     }
 	// Update is called once per frame
 	void Update()
@@ -109,18 +111,28 @@ public class Player_UI : MonoBehaviour
 			else if (Input.GetKeyDown(KeyCode.E)){ 
 				toggleShop = !toggleShop;
 			}
+			else if(Input.GetKeyDown(KeyCode.J)){
+				money.addMoney(15);
+			}
 			if(toggleShop){
 				if(Time.timeScale == 1.0)
 					Time.timeScale = 0.0f;
-				shop.Awake();
+					//Debug.Log("movement off");
+					camera.GetComponent<CameraController>().enabled = false;
+					shop.Awake();
+				}
 			}else if(!toggleShop){
 				if(Time.timeScale == 0.0)
 					Time.timeScale = 1.0f;
-				shop.SleepShop();
+					//Debug.Log("movement on");
+					camera.GetComponent<CameraController>().enabled = true;
+					shop.SleepShop();
+				}
 			}
 
 			
 		}
+		money.updateMoney();
 	}
 	void TakeDamage(float damage)
 	{
