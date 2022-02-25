@@ -60,7 +60,7 @@ public class Player_UI : MonoBehaviour
 
 			if (currentProtection > 0)
 			{
-				LossProtection(Time.deltaTime);
+				LossProtection(2*Time.deltaTime);
 				if(currentProtection < 0) currentProtection = 0;
 			}
 			else
@@ -73,56 +73,50 @@ public class Player_UI : MonoBehaviour
 
 			if(Input.GetKeyDown(KeyCode.Alpha1))
 			{
-				if(!(currentProtection == maxProtection)){
-					if(currentProtection < mascarillaPapel.getProtection()){
-						if(mascarillaPapel.lossMascarilla()){
-							currentProtection = mascarillaPapel.getProtection();
-							if(currentProtection > maxProtection) currentProtection = maxProtection;
-						}
+				if(mascarillaPapel.unit > 0 && currentHealth > 0) {
+					if(mascarillaPapel.lossMascarilla()){
+						currentProtection += mascarillaPapel.getProtection();
+						if(currentProtection > maxProtection) currentProtection = maxProtection;
 					}
 				}
 			} else if(Input.GetKeyDown(KeyCode.Alpha2))
 			{
-				if(!(currentProtection == maxProtection)){
-					if(currentProtection < mascarillaPlastico.getProtection()){
-						if(mascarillaPlastico.lossMascarilla()){
-							currentProtection = mascarillaPlastico.getProtection();
-							if(currentProtection > maxProtection) currentProtection = maxProtection;
-						}
+				if(mascarillaPlastico.unit > 0 && currentHealth > 0) {
+					if(mascarillaPlastico.lossMascarilla()){
+						currentProtection += mascarillaPlastico.getProtection();
+						if(currentProtection > maxProtection) currentProtection = maxProtection;
 					}
 				}
 			} else if(Input.GetKeyDown(KeyCode.Alpha3))
 			{
-				if(!(currentProtection == maxProtection)){
-					if(currentProtection < mascarillaFibra.getProtection()){
-						if(mascarillaFibra.lossMascarilla()){
-							currentProtection = mascarillaFibra.getProtection();
-							if(currentProtection > maxProtection) currentProtection = maxProtection;
-						}
+				if(mascarillaFibra.unit > 0 && currentHealth > 0) {
+					if(mascarillaFibra.lossMascarilla()){
+						currentProtection += mascarillaFibra.getProtection();
+						if(currentProtection > maxProtection) currentProtection = maxProtection;
 					}
 				}
 			}
 			else if (Input.GetKeyDown(KeyCode.Alpha4))
 			{
-				if(!(currentProtection == maxProtection)){
-				if(gel.quitarUnidades())
-					currentProtection += 15f;
-					if(currentProtection > maxProtection) currentProtection = maxProtection;
+				if(gel.unidades > 0 && currentHealth > 0) {
+					if(gel.quitarUnidades()) {
+
+						currentProtection += 15f;
+						if(currentProtection > maxProtection) currentProtection = maxProtection;
+					}
 				}
 			}
 			else if (Input.GetKeyDown(KeyCode.E)){ 
 				toggleShop = !toggleShop;
 			}
 			if(toggleShop){
-				if(Time.timeScale == 1.0){
+				if(Time.timeScale == 1.0)
 					Time.timeScale = 0.0f;
-					shop.Awake();
-				}
+				shop.Awake();
 			}else if(!toggleShop){
-				if(Time.timeScale == 0.0){
+				if(Time.timeScale == 0.0)
 					Time.timeScale = 1.0f;
-					shop.SleepShop();
-				}
+				shop.SleepShop();
 			}
 
 			

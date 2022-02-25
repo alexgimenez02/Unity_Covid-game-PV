@@ -5,9 +5,13 @@ using UnityEngine;
 public class Mascarilla : MonoBehaviour
 {
     public int maskType; //1 -> papel, 2 -> plastico, 3 -> fibra
-    private float[] protection = {100f / 4f, 100f / 2f, 100f};
+    private float[] protection = {100f / 4f, 100f / 2f, 80f};
     public TextUnit txt;
     public int unit;
+
+    public float getUnit(){
+        return unit;
+    }
 
     public float getProtection(){
         Debug.Log(protection);
@@ -21,6 +25,7 @@ public class Mascarilla : MonoBehaviour
         int units = int.Parse(split_text[0]);
         if(units > 0)
             txt.modifyText(--units);
+            --unit;
             return true;
         return false;
 
