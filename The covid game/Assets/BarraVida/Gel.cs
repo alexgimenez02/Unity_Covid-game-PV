@@ -19,12 +19,15 @@ public class Gel : MonoBehaviour
     {
         if (unidades > 0)
         {
-            unidades--;
-            txt.modifyText(unidades);
+            txt.modifyText(--unidades);
             return true;
         }
         return false;
         
+    }
+    public void addUnidades()
+    {
+        txt.modifyText(++unidades);
     }
     
 }

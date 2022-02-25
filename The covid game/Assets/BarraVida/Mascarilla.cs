@@ -7,6 +7,7 @@ public class Mascarilla : MonoBehaviour
     public int maskType; //1 -> papel, 2 -> plastico, 3 -> fibra
     private float[] protection = {100f / 4f, 100f / 2f, 100f};
     public TextUnit txt;
+    public int unit;
 
     public float getProtection(){
         Debug.Log(protection);
@@ -24,8 +25,16 @@ public class Mascarilla : MonoBehaviour
         return false;
 
     }
+    public void addMascarilla(){
+        string actual_units = txt.getText();
+        Debug.Log(actual_units);
+        string[] split_text = actual_units.Split(" "[0]);
+        int units = int.Parse(split_text[0]);
+        if(units > 0)
+            txt.modifyText(++units);
+    }
+
     public void numMasks(){
-        int unit = 2;
         txt.modifyText(unit);
         Debug.Log("Test numMasks en mascarilla: " + maskType);
     }
