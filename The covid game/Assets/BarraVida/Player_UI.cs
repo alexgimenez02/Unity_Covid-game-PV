@@ -35,7 +35,7 @@ public class Player_UI : MonoBehaviour
 		mascarillaFibra.numMasks();
 		transform = person.transform;
 		gel.setUnidades(2); 
-		shop.Initialize();
+		shop.SleepShop();
 		toggleShop = false;
 		
     }

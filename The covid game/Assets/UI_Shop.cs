@@ -16,11 +16,7 @@ public class UI_Shop : MonoBehaviour, BuyBehaviour
     public Button button3;
     public Button button4;
 
-    public void Initialize(){
-        container = transform.Find("container");
-        shopItemTemplate = container.Find("shopItemTemplate");
-        shopItemTemplate.gameObject.SetActive(false);
-    }
+    
     public void Awake(){
         container = transform.Find("container");
         shopItemTemplate = container.Find("shopItemTemplate");
