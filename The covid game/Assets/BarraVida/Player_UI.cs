@@ -114,13 +114,15 @@ public class Player_UI : MonoBehaviour
 				toggleShop = !toggleShop;
 			}
 			if(toggleShop){
-				if(Time.timeScale == 1.0)
+				if(Time.timeScale == 1.0){
 					Time.timeScale = 0.0f;
-				shop.Awake();
+					shop.Awake();
+				}
 			}else if(!toggleShop){
-				if(Time.timeScale == 0.0)
+				if(Time.timeScale == 0.0){
 					Time.timeScale = 1.0f;
-				shop.SleepShop();
+					shop.SleepShop();
+				}
 			}
 
 			
