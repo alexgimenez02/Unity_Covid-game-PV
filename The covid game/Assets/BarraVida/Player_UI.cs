@@ -114,15 +114,17 @@ public class Player_UI : MonoBehaviour
 			else if(Input.GetKeyDown(KeyCode.J)){
 				money.addMoney(15);
 			}
+
 			if(toggleShop){
-				if(Time.timeScale == 1.0)
+				if(Time.timeScale == 1.0) {
 					Time.timeScale = 0.0f;
 					//Debug.Log("movement off");
 					camera.GetComponent<CameraController>().enabled = false;
 					shop.Awake();
 				}
-			}else if(!toggleShop){
-				if(Time.timeScale == 0.0)
+			}
+			else if(!toggleShop){
+				if(Time.timeScale == 0.0){
 					Time.timeScale = 1.0f;
 					//Debug.Log("movement on");
 					camera.GetComponent<CameraController>().enabled = true;
