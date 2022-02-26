@@ -73,40 +73,45 @@ public class Player_UI : MonoBehaviour
 
 
 
-			if(Input.GetKeyDown(KeyCode.Alpha1))
+			if(Input.GetKeyDown(KeyCode.Alpha2))
 			{
-				if(mascarillaPapel.unit > 0 && currentHealth > 0) {
+				//if(mascarillaPapel.unit > 0 && currentHealth > 0) {
+					
 					if(mascarillaPapel.lossMascarilla()){
-						currentProtection += mascarillaPapel.getProtection();
-						if(currentProtection > maxProtection) currentProtection = maxProtection;
+						currentProtection = mascarillaPapel.getProtection();
+						
 					}
-				}
-			} else if(Input.GetKeyDown(KeyCode.Alpha2))
-			{
-				if(mascarillaPlastico.unit > 0 && currentHealth > 0) {
-					if(mascarillaPlastico.lossMascarilla()){
-						currentProtection += mascarillaPlastico.getProtection();
-						if(currentProtection > maxProtection) currentProtection = maxProtection;
-					}
-				}
+					
+				//}
 			} else if(Input.GetKeyDown(KeyCode.Alpha3))
 			{
-				if(mascarillaFibra.unit > 0 && currentHealth > 0) {
-					if(mascarillaFibra.lossMascarilla()){
-						currentProtection += mascarillaFibra.getProtection();
-						if(currentProtection > maxProtection) currentProtection = maxProtection;
+				//if(mascarillaPlastico.unit > 0 && currentHealth > 0) {
+					
+					if(mascarillaPlastico.lossMascarilla()){
+						currentProtection = mascarillaPlastico.getProtection();
+						
 					}
-				}
-			}
-			else if (Input.GetKeyDown(KeyCode.Alpha4))
+					
+				//}
+			} else if(Input.GetKeyDown(KeyCode.Alpha4))
 			{
-				if(gel.unidades > 0 && currentHealth > 0) {
+				//if(mascarillaFibra.unit > 0 && currentHealth > 0) {
+					
+					if(mascarillaFibra.lossMascarilla()){
+						currentProtection = mascarillaFibra.getProtection();
+					}
+				
+				//}
+			}
+			else if (Input.GetKeyDown(KeyCode.Alpha1))
+			{
+				//if(gel.unidades > 0 && currentHealth > 0) {
 					if(gel.quitarUnidades()) {
 
 						currentProtection += 15f;
 						if(currentProtection > maxProtection) currentProtection = maxProtection;
 					}
-				}
+				//}
 			}
 			else if (Input.GetKeyDown(KeyCode.E)){ 
 				toggleShop = !toggleShop;
