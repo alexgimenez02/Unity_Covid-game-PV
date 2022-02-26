@@ -57,7 +57,7 @@ public class Test_script : MonoBehaviour
         Stealing_points.Clear();
         pick_up_points.Clear();
 
-        GameObject[] waypointsFind = GameObject.FindGameObjectsWithTag("waypoint");
+        GameObject[] waypointsFind = GameObject.FindGameObjectsWithTag("moverse");
         GameObject[] SittingpointsFind = GameObject.FindGameObjectsWithTag("sittingpoint");
         GameObject[] stealingpointsFind = GameObject.FindGameObjectsWithTag("stealingpoint");
         GameObject[] pick_up_pointsFind = GameObject.FindGameObjectsWithTag("pickuppoint");
@@ -177,15 +177,11 @@ public class Test_script : MonoBehaviour
      
         if(!destermine_new_aim)
         {
-            int what_to_choose = UnityEngine.Random.Range(0, 5);
-
-           
+            int what_to_choose = UnityEngine.Random.Range(0, 2);
+   
 
             walk = false;
             run = false;
-            sit = false;
-            steal = false;
-            pick_up = false;
 
 
 
@@ -203,30 +199,6 @@ public class Test_script : MonoBehaviour
 
                 int Which_point = UnityEngine.Random.Range(0, way_points.Count );
                 aim_point = way_points[Which_point].gameObject;
-                destermine_new_aim = true;
-            }
-            if (what_to_choose == 2)
-            {
-                sit = true;
-
-                int Which_point = UnityEngine.Random.Range(0, Sitting_points.Count );
-                aim_point = Sitting_points[Which_point].gameObject;
-                destermine_new_aim = true;
-            }
-            if (what_to_choose == 3)
-            {
-                steal = true;
-
-                int Which_point = UnityEngine.Random.Range(0, Stealing_points.Count );
-                aim_point = Stealing_points[Which_point].gameObject;
-                destermine_new_aim = true;
-            }
-            if (what_to_choose == 4)
-            {
-                pick_up = true;
-
-                int Which_point = UnityEngine.Random.Range(0, pick_up_points.Count );
-                aim_point = pick_up_points[Which_point].gameObject;
                 destermine_new_aim = true;
             }
 
