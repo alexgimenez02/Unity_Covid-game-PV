@@ -21,5 +21,9 @@ public class ProtectionBar : MonoBehaviour
 		slider.value = health;
 
 	}
+	public float GetProtection()
+    {
+		return slider.value;
+    }
 
 }
