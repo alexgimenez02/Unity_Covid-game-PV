@@ -126,9 +126,12 @@ public class MissionWaypoint : MonoBehaviour
 
         if (showmessage)
         {
-            if (GUILayout.Button("CLOSE POPUP"))
+           
+            if (Input.GetKey(KeyCode.Return))
+            {
+                
                 showmessage = false;
-
+            }
         }
 
 
@@ -141,7 +144,7 @@ public class MissionWaypoint : MonoBehaviour
 
             if(goalsAchived == 1 )
             {
-                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 1 delivered!! \r\n You receive DEATH \r\n deliver the next package", currentStyle);
+                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE", currentStyle);
                 if (target_state == true)
                 {
                     money.addMoney(30);
@@ -154,7 +157,7 @@ public class MissionWaypoint : MonoBehaviour
             }
             if (goalsAchived == 2)
             {
-                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 2 delivered!! \r\n Was just jocking lol deadass  \r\n You receive 50€ \r\n deliver the next package", currentStyle);
+                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 2 delivered!!  \r\n You receive 50€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE", currentStyle);
                 if (target_state2 == true)
                 {
                     money.addMoney(50);
@@ -164,7 +167,7 @@ public class MissionWaypoint : MonoBehaviour
             }
             if (goalsAchived == 3)
             {
-                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 3 delivered!! \r\n You got COVID \r\n enjoy your 10€ and the trip to ER ", currentStyle);
+                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 3 delivered!! \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ", currentStyle);
                 if (target_state3 == true)
                 {
                     money.addMoney(10);
