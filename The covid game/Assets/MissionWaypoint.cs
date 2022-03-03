@@ -195,6 +195,9 @@ public class MissionWaypoint : MonoBehaviour
         result.Apply();
         return result;
     }
-
+    public int getGoalsAchived()
+    {
+        return goalsAchived;
+    }
 }
 

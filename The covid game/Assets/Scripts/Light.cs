@@ -6,14 +6,40 @@ public class Light : MonoBehaviour
 {
     public int rotationScale = 10;
     public int mission_complete;
-    public Mission_Waypoint mw;
+    public MissionWaypoint mw;
+
+    private bool target1 = false;
+    private bool target2 = false;
+    private bool target3 = false;
 
     // Update is called once per frame
     void Update()
     {
         mission_complete = mw.getGoalsAchived();
-        if (mission_complete == 1) transform.Rotate(80, -30, 0);
-        if (mission_complete == 2) transform.Rotate(120, -30, 0);
-        if (mission_complete == 3) transform.Rotate(170, -30, 0);
+        if (mission_complete == 1)
+        {
+
+            if (!target1)
+            {
+                transform.Rotate(20, 0, 0);
+                target1 = !target1;
+            }
+        }
+        if (mission_complete == 2)
+        {
+            if (!target2)
+            {
+                transform.Rotate(20, -30, 0);
+                target2 = !target2;
+            }
+        }
+        if (mission_complete == 3)
+        {
+            if (!target3)
+            {
+                transform.Rotate(50, 0, 0);
+                target3 = !target3;
+            }
+        }
     }
 }

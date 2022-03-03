@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Tiempodeespera : MonoBehaviour
 {
-    void Start()
+    /*void Start()
     {
-        StartCoroutine(UsingYield(7));
-    }
+        //StartCoroutine(UsingYield(7));
+    }*/
 
     IEnumerator UsingYield(int seconds)
     {
         yield return new WaitForSeconds(seconds);
+        //Application.LoadLevel("Ciudad");
+    }
+    public void startCity()
+    {
         Application.LoadLevel("Ciudad");
     }
 }

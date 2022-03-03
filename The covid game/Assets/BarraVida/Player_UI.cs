@@ -57,12 +57,12 @@ public class Player_UI : MonoBehaviour
 				prev_position = transform.position;
 			}
 
-			if (currentProtection > 0)
+			if (currentProtection > 0) //Protegido
 			{
 				LossProtection(2*Time.deltaTime);
 				if(currentProtection < 0) currentProtection = 0;
 			}
-			else
+			else //Desprotegido
 			{
 				TakeDamage(Time.deltaTime + Mathf.Abs((prev_position.x - transform.position.x) + (prev_position.y - transform.position.y) + (prev_position.y - transform.position.y)));
 			}
@@ -120,7 +120,7 @@ public class Player_UI : MonoBehaviour
 			if(toggleShop){
 				if(Time.timeScale == 1.0) {
 					Time.timeScale = 0.0f;
-					//Debug.Log("movement off");
+					
 					camera.GetComponent<CameraController>().enabled = false;
 					shop.Awake();
 				}
@@ -128,7 +128,7 @@ public class Player_UI : MonoBehaviour
 			else if(!toggleShop){
 				if(Time.timeScale == 0.0){
 					Time.timeScale = 1.0f;
-					//Debug.Log("movement on");
+					
 					camera.GetComponent<CameraController>().enabled = true;
 					shop.SleepShop();
 				}
@@ -144,7 +144,7 @@ public class Player_UI : MonoBehaviour
 
 		healthBar.SetHealth(currentHealth);
 	}
-	void LossProtection(float damage)
+	public void LossProtection(float damage)
 	{
 		currentProtection -= damage;
 
