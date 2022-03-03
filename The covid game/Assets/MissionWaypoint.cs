@@ -9,8 +9,12 @@ public class MissionWaypoint : MonoBehaviour
     public RawImage img;
     // Target locations for day one demo
     public Transform target;
+    public bool target_state = false;
     public Transform target2;
+    public bool target_state2 = false;
     public Transform target3;
+    public bool target_state3 = false;
+
     public int goalsAchived;
 
     public Text text;
@@ -18,6 +22,7 @@ public class MissionWaypoint : MonoBehaviour
     public Vector2 pos;
     private GUIStyle currentStyle;
     public bool showmessage;
+    public Money money;
 
 
     // Start is called before the first frame update
@@ -28,6 +33,9 @@ public class MissionWaypoint : MonoBehaviour
         text.color = Color.white;
         goalsAchived = 0;
         showmessage = false;
+        target_state = true;
+        target_state2 = true;
+        target_state3 = true;
 
 
 
@@ -120,8 +128,9 @@ public class MissionWaypoint : MonoBehaviour
         {
             if (GUILayout.Button("CLOSE POPUP"))
                 showmessage = false;
+
         }
-        
+
 
 
         if (showmessage)
@@ -130,20 +139,38 @@ public class MissionWaypoint : MonoBehaviour
             currentStyle = new GUIStyle(GUI.skin.box);
             currentStyle.normal.background = MakeTex(2, 2, Color.black);
 
-            if(goalsAchived == 1)
+            if(goalsAchived == 1 )
             {
                 GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 1 delivered!! \r\n You receive DEATH \r\n deliver the next package", currentStyle);
+                if (target_state == true)
+                {
+                    money.addMoney(30);
+                    target_state = false;
+
+                }
+
+
 
             }
             if (goalsAchived == 2)
             {
                 GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 2 delivered!! \r\n Was just jocking lol deadass  \r\n You receive 50€ \r\n deliver the next package", currentStyle);
+                if (target_state2 == true)
+                {
+                    money.addMoney(50);
+                    target_state2 = false;
 
+                }
             }
             if (goalsAchived == 3)
             {
                 GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 3 delivered!! \r\n You got COVID \r\n enjoy your 10€ and the trip to ER ", currentStyle);
+                if (target_state3 == true)
+                {
+                    money.addMoney(10);
+                    target_state3 = false;
 
+                }
             }
 
         }
