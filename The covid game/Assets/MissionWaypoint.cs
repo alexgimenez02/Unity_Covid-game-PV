@@ -23,7 +23,9 @@ public class MissionWaypoint : MonoBehaviour
     private GUIStyle currentStyle;
     public bool showmessage;
     public Money money;
-
+    public ProtectionBar pb;
+    public string texto_covid;
+    public string texto_normal;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,8 @@ public class MissionWaypoint : MonoBehaviour
         target_state = true;
         target_state2 = true;
         target_state3 = true;
-
+        texto_covid = "";
+        texto_normal = "";
 
 
     }
@@ -144,10 +147,23 @@ public class MissionWaypoint : MonoBehaviour
 
             if(goalsAchived == 1 )
             {
-                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE", currentStyle);
+                texto_normal= "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+                texto_covid = "Package 1 delivered!! \r\n NO PROTECTION = NO MONEY \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+
+                if (pb.GetProtection() > 0)
+                {
+                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_normal, currentStyle);
+
+                }
+                else
+                {
+                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
+                }
+                //GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE", currentStyle);
                 if (target_state == true)
                 {
-                    money.addMoney(30);
+                    if (pb.GetProtection() > 0)
+                        money.addMoney(30);
                     target_state = false;
 
                 }
@@ -157,20 +173,43 @@ public class MissionWaypoint : MonoBehaviour
             }
             if (goalsAchived == 2)
             {
-                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 2 delivered!!  \r\n You receive 50€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE", currentStyle);
+                texto_normal = "Package 2 delivered!!  \r\n You receive 50€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+                texto_covid = "Package 2 delivered!!  \r\n NO PROTECTION = NO MONEY \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+                if (pb.GetProtection() > 0)
+                {
+                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_normal, currentStyle);
+
+                }
+                else
+                {
+                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
+                }
                 if (target_state2 == true)
                 {
-                    money.addMoney(50);
+                    if (pb.GetProtection() > 0)
+                        money.addMoney(50);
                     target_state2 = false;
 
                 }
             }
             if (goalsAchived == 3)
             {
+                texto_normal = "Package 3 delivered!! \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ";
+                texto_covid = "Package 3 delivered!!\r\n NO PROTECTION = NO MONEY \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ";
+                if (pb.GetProtection() > 0)
+                {
+                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_normal, currentStyle);
+
+                }
+                else
+                {
+                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
+                }
                 GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 3 delivered!! \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ", currentStyle);
                 if (target_state3 == true)
                 {
-                    money.addMoney(10);
+                    if (pb.GetProtection() > 0)
+                        money.addMoney(10);
                     target_state3 = false;
 
                 }
