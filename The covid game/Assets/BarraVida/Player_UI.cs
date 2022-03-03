@@ -46,9 +46,7 @@ public class Player_UI : MonoBehaviour
 	{
 		if (currentHealth <= 0)
 		{
-			if (currentHealth < 0) currentHealth = 0;
-			Application.LoadLevel("Game over");
-			//Hacer sleep
+			Application.LoadLevel("Game Over");
 			
 
 		}
