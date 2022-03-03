@@ -9,8 +9,8 @@ public class Test_script : MonoBehaviour
 
 
     NavMeshAgent agent;
-   public Animator ani;
-   public GameObject aim_point;
+    public Animator ani;
+    public GameObject aim_point;
 
     public bool execute_walking;
     public bool execute_sitting;
