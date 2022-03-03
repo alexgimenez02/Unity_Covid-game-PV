@@ -9,11 +9,11 @@ public class MissionWaypoint : MonoBehaviour
     public RawImage img;
     // Target locations for day one demo
     public Transform target;
-    public bool target_state = false;
+    public bool target_state;
     public Transform target2;
-    public bool target_state2 = false;
+    public bool target_state2;
     public Transform target3;
-    public bool target_state3 = false;
+    public bool target_state3;
 
     public int goalsAchived;
 
@@ -25,7 +25,7 @@ public class MissionWaypoint : MonoBehaviour
     public Money money;
     public ProtectionBar pb;
     public string texto_covid;
-    public string texto_normal;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +39,7 @@ public class MissionWaypoint : MonoBehaviour
         target_state2 = true;
         target_state3 = true;
         texto_covid = "";
-        texto_normal = "";
-
+   
 
     }
 
@@ -147,72 +146,65 @@ public class MissionWaypoint : MonoBehaviour
 
             if(goalsAchived == 1 )
             {
-                texto_normal= "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
-                texto_covid = "Package 1 delivered!! \r\n NO PROTECTION = NO MONEY \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
 
-                if (pb.GetProtection() > 0)
-                {
-                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_normal, currentStyle);
-
-                }
-                else
-                {
-                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
-                }
                 //GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE", currentStyle);
                 if (target_state == true)
                 {
                     if (pb.GetProtection() > 0)
+                    {
                         money.addMoney(30);
+                        texto_covid = "Package 1 delivered!! \r\n You receive 30€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+                    } 
+                    else
+                    {
+                        texto_covid = "Package 1 delivered!! \r\n NO PROTECTION = NO MONEY \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+                    }
+
                     target_state = false;
 
+
                 }
-
-
-
+                GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
             }
             if (goalsAchived == 2)
             {
-                texto_normal = "Package 2 delivered!!  \r\n You receive 50€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
-                texto_covid = "Package 2 delivered!!  \r\n NO PROTECTION = NO MONEY \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
-                if (pb.GetProtection() > 0)
-                {
-                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_normal, currentStyle);
-
-                }
-                else
-                {
-                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
-                }
+               
                 if (target_state2 == true)
                 {
                     if (pb.GetProtection() > 0)
+                    {
+                        texto_covid = "Package 2 delivered!!  \r\n You receive 50€ \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE"; 
                         money.addMoney(50);
+                    }
+                    else
+                    {
+                        texto_covid = "Package 2 delivered!!  \r\n NO PROTECTION = NO MONEY \r\n deliver the next package \r\n PRESS ENTER TO CONTINUE";
+                    }
                     target_state2 = false;
 
                 }
+                GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
             }
             if (goalsAchived == 3)
             {
-                texto_normal = "Package 3 delivered!! \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ";
-                texto_covid = "Package 3 delivered!!\r\n NO PROTECTION = NO MONEY \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ";
-                if (pb.GetProtection() > 0)
-                {
-                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_normal, currentStyle);
-
-                }
-                else
-                {
-                    GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
-                }
-                GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Package 3 delivered!! \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ", currentStyle);
+                
                 if (target_state3 == true)
                 {
                     if (pb.GetProtection() > 0)
+                    {
                         money.addMoney(10);
+                        texto_covid = "Package 3 delivered!! \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ";
+                    }
+                    else
+                    {
+                        texto_covid = "Package 3 delivered!!\r\n NO PROTECTION = NO MONEY \r\n enjoy your 10€  \r\n PRESS ENTER TO CONTINUE ";
+                    }
+                       
+
                     target_state3 = false;
 
                 }
+                GUI.Label(new Rect(x, y, windowWidth, windowHeight), texto_covid, currentStyle);
             }
 
         }
