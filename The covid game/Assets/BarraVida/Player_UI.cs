@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_UI : MonoBehaviour
 {
@@ -20,14 +21,19 @@ public class Player_UI : MonoBehaviour
 	public UI_Shop shop;
 	public GameObject camera;
 	public Money money;
-	
+	public GameObject[] pharmacyList;
+
+
+
+	private int windowWidth, windowHeight, x, y;
+	private GUIStyle currentStyle;
 	private Vector3 prev_position;
 	private Transform transform;
 	private bool toggleShop;
     // Start is called before the first frame update
     void Start()
     {
-		
+
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
 		procBar.SetMaxProtection(maxProtection);
@@ -110,14 +116,15 @@ public class Player_UI : MonoBehaviour
 					}
 				//}
 			}
-			else if (Input.GetKeyDown(KeyCode.E)){ 
-				toggleShop = !toggleShop;
-			}
 			/*else if(Input.GetKeyDown(KeyCode.J)){
 				money.addMoney(15);
 			}*/
 
-			if(toggleShop){
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				if(checkDistance(pharmacyList)) toggleShop = !toggleShop;
+			}
+			if (toggleShop){
 				if(Time.timeScale == 1.0) {
 					Time.timeScale = 0.0f;
 					
@@ -150,5 +157,43 @@ public class Player_UI : MonoBehaviour
 
 		procBar.SetProtection(currentProtection);
 	}
-	
+
+	Texture2D MakeTex(int width, int height, Color col)
+	{
+		Color[] pix = new Color[width * height];
+		for (int i = 0; i < pix.Length; ++i)
+		{
+			pix[i] = col;
+		}
+		Texture2D result = new Texture2D(width, height);
+		result.SetPixels(pix);
+		result.Apply();
+		return result;
+	}
+	bool checkDistance(GameObject[] lists)
+    {
+		int distance;
+		for (int iter = 0; iter < pharmacyList.Length; iter++)
+		{
+			distance = (int)Vector3.Distance(pharmacyList[iter].transform.position, transform.position);
+			if (distance <= 1) return true;
+		}
+		return false;
+
+	}
+
+	void OnGUI()
+    {
+		int windowWidth = 200;
+		int windowHeight = 200;
+		int x = (Screen.width - windowWidth) / 2;
+		int y = (Screen.height - windowWidth) / 2;
+		currentStyle = new GUIStyle(GUI.skin.box);
+		currentStyle.normal.background = MakeTex(1, 1, Color.black);
+		if (checkDistance(pharmacyList) && !toggleShop)
+		{
+			GUI.Label(new Rect(x, y, windowWidth, windowHeight), "Pulsa E para entrar", currentStyle);
+		}
+
+	}
 }
