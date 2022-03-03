@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class moveHuman : MonoBehaviour
 {
-	private float speed = 5.0f;
+	private float speed = 10.0f;
 	public GameObject character;
 	// Start is called before the first frame update
 	void Start()

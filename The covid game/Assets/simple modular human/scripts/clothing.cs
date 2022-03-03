@@ -890,9 +890,6 @@ public class clothing : MonoBehaviour
 
                 tank_top.GetComponent<Renderer>().materials[0].mainTexture = tank_top_textures[texture];
             }
-
-
-
         }
 
 
@@ -901,26 +898,10 @@ public class clothing : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         StopCoroutine(coroutine_random_clothing);
-        coroutine_random_clothing = StartCoroutine(start_random_clothing());
-        
     }
 
-
-    void Update()
+    void Start()
     {
-        if(!show_run)
-        {
-            show_run = true;
-
-            coroutine_random_clothing = StartCoroutine(start_random_clothing());
-
-          
-        }
-        
-
-
-
-
-
+        coroutine_random_clothing = StartCoroutine(start_random_clothing());
     }
 }
