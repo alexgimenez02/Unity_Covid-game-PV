@@ -46,11 +46,10 @@ public class Player_UI : MonoBehaviour
 	{
 		if (currentHealth <= 0)
 		{
-
-			//Application.LoadLevel("Game over");
+			if (currentHealth < 0) currentHealth = 0;
+			Application.LoadLevel("Game over");
 			//Hacer sleep
-			//Application.LoadLevel("Main menu");
-			if(currentHealth < 0) currentHealth = 0;
+			
 
 		}
 		else
@@ -116,9 +115,9 @@ public class Player_UI : MonoBehaviour
 			else if (Input.GetKeyDown(KeyCode.E)){ 
 				toggleShop = !toggleShop;
 			}
-			else if(Input.GetKeyDown(KeyCode.J)){
+			/*else if(Input.GetKeyDown(KeyCode.J)){
 				money.addMoney(15);
-			}
+			}*/
 
 			if(toggleShop){
 				if(Time.timeScale == 1.0) {
