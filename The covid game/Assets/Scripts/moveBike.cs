@@ -15,6 +15,8 @@ public class moveBike : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		transform.eulerAngles = Vector3.up * transform.localEulerAngles.y;
+
 		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
 			transform.position += transform.forward * speed * Time.deltaTime;
