@@ -25,7 +25,8 @@ public class MissionWaypoint : MonoBehaviour
     public Money money;
     public ProtectionBar pb;
     public string texto_covid;
-  
+
+    private GameObject trg1, trg2, trg3, wpUI;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +40,10 @@ public class MissionWaypoint : MonoBehaviour
         target_state2 = true;
         target_state3 = true;
         texto_covid = "";
-   
+        trg1 = GameObject.Find("/Mission1");
+        trg2 = GameObject.Find("/Mission2");
+        trg3 = GameObject.Find("/Mission3");
+        wpUI = GameObject.Find("/Canvas/RawImage");
 
     }
 
@@ -87,6 +91,8 @@ public class MissionWaypoint : MonoBehaviour
             if (distance <= 11 && goalsAchived == 2)
             {
                 goalsAchived = 3;
+                trg3.gameObject.SetActive(false);
+                wpUI.gameObject.SetActive(false);
                 showmessage = true;
 
             }
@@ -98,6 +104,7 @@ public class MissionWaypoint : MonoBehaviour
                 target = target3;
                 //change goals achieved to 1;
                 goalsAchived = 2;
+                trg2.gameObject.SetActive(false);
                 showmessage = true;
             }
 
@@ -108,6 +115,7 @@ public class MissionWaypoint : MonoBehaviour
                 target = target2;
                 //change goals achieved to 1;
                 goalsAchived = 1;
+                trg1.gameObject.SetActive(false);
                 showmessage = true;
             }
 
