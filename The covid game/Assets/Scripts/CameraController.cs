@@ -18,8 +18,20 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-	    offset = Quaternion.AngleAxis (Input.GetAxis("Mouse X") * turnSpeed, Vector3.up) * offset;
+	    if(Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
+        {
+           offset = Quaternion.AngleAxis (Input.GetAxis("Mouse X") * turnSpeed, Vector3.up) * offset;
+        }
+        else
+        {
+            if(Input.GetKey(KeyCode.Q))
+                offset = Quaternion.AngleAxis (-1 * turnSpeed, Vector3.up) * offset;
+            else if(Input.GetKey(KeyCode.R))
+                offset = Quaternion.AngleAxis (1 * turnSpeed, Vector3.up) * offset;
+
+        }
         transform.position = player.transform.position + offset;
         transform.LookAt(player.position);
+
     }
 }
