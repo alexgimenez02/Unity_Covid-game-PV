@@ -24,7 +24,6 @@ public class Player_UI : MonoBehaviour
     public GameObject[] pharmacyList;
 
 
-    
     private GameObject go1, go2, go3, go4;
     private int windowWidth, windowHeight, x, y;
     private GUIStyle currentStyle;
@@ -51,7 +50,7 @@ public class Player_UI : MonoBehaviour
         go2 = GameObject.Find("/Canvas/Mascarilla Plastico"); ;
         go3 = GameObject.Find("/Canvas/Mascarilla Fibra"); ;
         go4 = GameObject.Find("/Canvas/Gel");
-        //Debug.Log(""+typeof(pharmacyList));
+        
         deletedStore = false;
 
     }
@@ -160,17 +159,7 @@ public class Player_UI : MonoBehaviour
                     int inx = checkDistanceIndex(pharmacyList);
                     if (currentProtection <= 0) {
                         pharmacyList[inx].gameObject.SetActive(false);
-                        GameObject[] newList = new GameObject[pharmacyList.Length - 1];
-                        for(int i = 0; i < pharmacyList.Length; i++)
-                        {
-                            if (inx != i)
-                            {
-                                if (i > newList.Length) newList[i - 1] = pharmacyList[i];
-                                else newList[i] = pharmacyList[i];
-                            
-                            }
-                        }
-                        pharmacyList = newList;
+                        
                         deletedStore = !deletedStore;
                     }
                 }
@@ -253,29 +242,35 @@ public class Player_UI : MonoBehaviour
         result.Apply();
         return result;
     }
-    bool checkDistance(GameObject[] lists)
+    private bool checkDistance(GameObject[] lists)
     {
         int distance;
-        for (int iter = 0; iter < pharmacyList.Length; iter++)
+        for (int iter = 0; iter < lists.Length; iter++)
         {
-            distance = (int)Vector3.Distance(pharmacyList[iter].transform.position, transform.position);
-            if (distance <= 1) return true;
+            if (lists[iter].gameObject.activeSelf) 
+            { 
+                distance = (int)Vector3.Distance(lists[iter].transform.position, transform.position);
+                if (distance <= 1) return true;
+            }
         }
         return false;
 
     }
-    int checkDistanceIndex(GameObject[] lists)
+    private int checkDistanceIndex(GameObject[] lists)
     {
         int distance;
-        for(int iter = 0; iter < pharmacyList.Length; iter++)
+        for(int iter = 0; iter < lists.Length; iter++)
         {
-            distance = (int)Vector3.Distance(pharmacyList[iter].transform.position, transform.position);
-            if (distance <= 1) return iter;
+            if (lists[iter].gameObject.activeSelf)
+            {
+                distance = (int)Vector3.Distance(lists[iter].transform.position, transform.position);
+                if (distance <= 1) return iter;
+            }
         }
         return -1;
     }
 
-    void OnGUI()
+    void OnGUI() 
     {
         int windowWidth = 200;
         int windowHeight = 200;
