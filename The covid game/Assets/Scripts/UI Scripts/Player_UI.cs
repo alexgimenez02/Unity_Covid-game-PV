@@ -24,12 +24,13 @@ public class Player_UI : MonoBehaviour
     public GameObject[] pharmacyList;
 
 
+    
     private GameObject go1, go2, go3, go4;
     private int windowWidth, windowHeight, x, y;
     private GUIStyle currentStyle;
     private Vector3 prev_position;
     private Transform transform;
-    private bool toggleShop;
+    private bool toggleShop, deletedStore;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,8 @@ public class Player_UI : MonoBehaviour
         go2 = GameObject.Find("/Canvas/Mascarilla Plastico"); ;
         go3 = GameObject.Find("/Canvas/Mascarilla Fibra"); ;
         go4 = GameObject.Find("/Canvas/Gel");
+        //Debug.Log(""+typeof(pharmacyList));
+        deletedStore = false;
 
     }
     // Update is called once per frame
@@ -145,7 +148,33 @@ public class Player_UI : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (checkDistance(pharmacyList)) toggleShop = !toggleShop;
+                if (deletedStore)
+                {
+
+                    toggleShop = !toggleShop;
+                    deletedStore = !deletedStore;
+                }
+                else if (checkDistance(pharmacyList))
+                {
+                    toggleShop = !toggleShop;
+                    int inx = checkDistanceIndex(pharmacyList);
+                    if (currentProtection <= 0) {
+                        pharmacyList[inx].gameObject.SetActive(false);
+                        GameObject[] newList = new GameObject[pharmacyList.Length - 1];
+                        for(int i = 0; i < pharmacyList.Length; i++)
+                        {
+                            if (inx != i)
+                            {
+                                if (i > newList.Length) newList[i - 1] = pharmacyList[i];
+                                else newList[i] = pharmacyList[i];
+                            
+                            }
+                        }
+                        pharmacyList = newList;
+                        deletedStore = !deletedStore;
+                    }
+                }
+                
             }
             if (toggleShop)
             {
@@ -234,6 +263,16 @@ public class Player_UI : MonoBehaviour
         }
         return false;
 
+    }
+    int checkDistanceIndex(GameObject[] lists)
+    {
+        int distance;
+        for(int iter = 0; iter < pharmacyList.Length; iter++)
+        {
+            distance = (int)Vector3.Distance(pharmacyList[iter].transform.position, transform.position);
+            if (distance <= 1) return iter;
+        }
+        return -1;
     }
 
     void OnGUI()
