@@ -12,6 +12,12 @@ public class Light : MonoBehaviour
     private bool target2 = false;
     private bool target3 = false;
 
+    IEnumerator UsingYield(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Application.LoadLevel("Dormir");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -39,6 +45,7 @@ public class Light : MonoBehaviour
             {
                 transform.Rotate(50, 0, 0);
                 target3 = !target3;
+                StartCoroutine(UsingYield(5));
             }
         }
     }
