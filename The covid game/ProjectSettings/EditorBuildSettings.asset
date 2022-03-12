@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Ciudad.unity
     guid: 7759de288f5d4ee449a0ca5e2244944a
   - enabled: 1
-    path: Assets/Scenes/Narrativa.unity
+    path: Assets/Scenes/Narrativa1.unity
     guid: 5d3a24ecc6cbd6c48bc26fb621aac7a5
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: ce220bb9cdbbaa641a2ec5249108c3d5
+  - enabled: 1
+    path: Assets/Scenes/Narrativa2.unity
+    guid: 6dbfca6d93aa04f4e9ac8a10235918ca
   m_configObjects: {}
