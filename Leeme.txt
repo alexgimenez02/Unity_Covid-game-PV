@@ -1,0 +1,33 @@
+COMO EJECUTAR
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Doble-click izquierdo al ejecutable.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COMO JUGAR
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Para jugar, debes seleccionar la opción "Start playing", luego saldran dos textos, se pasan con los botones "Next" y "Start" que aparecen debajo
+de dichos textos.
+
+Una vez dentro, para moverse, se usan las teclas W,A,S,D (en el mismo orden: hacia adelante, girar modelo izquierda, girar modelo derecha, hacia atrás),
+puedes usar las teclas 1,2,3,4 para usar Gel, o ponerte diferentes mascarillas (Papel, Plástico y Fibra) en orden.
+La cámara se puede mover tanto con el ratón (moviendo hacia izquierda y derecha solo) o con las teclas Q (izquierda) y R (derecha).
+La tecla E te permite interactuar con las farmácias (cruces rojas que se encuentran en la acera) (tanto abrir como cerrar).
+La tecla Enter sirve para cerrar el PopUp que aparece al completar una misión.
+
+A parte, al interactuar con la tienda, puedes comprar usando el ratón (boton izquierdo) o las teclas 1,2,3,4 (para comprar los productos que corresponden a dichos botones).
+
+La tecla Esc vuelve al menú principal.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+QUE SE PUEDE HACER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dentro de la DEMO, puedes moverte por la acera, ir hacia los puntos marcados con un simbolo '$' para completar una misión o ir a las cruces rojas '+' para comprar
+productos para aumentar la protección del jugador.
+
+PORFAVOR, no ir marcha atras al chocar con un edificio puesto que por problemas del "rendering" de Unity, puedes clippearte a través de dichos edificios y caerte del mapa.
+
+NOTA IMPORTANTE: Si la barra roja termina, el juego pasará al estado de Game Over y se volverá a empezar de cero el dia.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTAS IMPORTANTES
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Pasarlo bien y evitar chocar con los PNJs lo máximo posible.
