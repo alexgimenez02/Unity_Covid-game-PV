@@ -31,8 +31,6 @@ public class Player_UI : MonoBehaviour
     private Vector3 prev_position;
     private Transform transform;
     private bool toggleShop, deletedStore, toggleStop;
-    private string[] objectNames;
-    private GameObject[] objects;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,16 +55,23 @@ public class Player_UI : MonoBehaviour
         deletedStore = false;
         toggleStop = false;
 
-        objectNames = new string[66];
-        objectNames[0] = "/Custom simple human_prefab_test";
-        for(int i = 1; i < 66 ;i++) objectNames[i] = "/Custom simple human_prefab_test ("+i+")";
-        objects = new GameObject[66];
-        for(int i = 0; i < 66; i++) objects[i] = GameObject.Find(objectNames[i]);
-
     }
     // Update is called once per frame
     void Update()
     {
+        
+        
+        if(Input.GetKeyDown(KeyCode.J)){
+            toggleStop = !toggleStop;
+            if(toggleStop){
+                if(Time.timeScale == 1.0)
+                    Time.timeScale = 0.0f;
+                
+            }else{
+                if(Time.timeScale == 0.0)
+                    Time.timeScale = 1.0f;
+            }
+        }
         if (currentHealth <= 0)
         {
             Application.LoadLevel("Game Over");
@@ -91,160 +96,146 @@ public class Player_UI : MonoBehaviour
             }
             prev_position = transform.position;
 
+            if(!toggleStop)
+            {
+                if (!toggleShop)
+                {
+                    if (Time.timeScale == 0.0)
+                    {
+                        Time.timeScale = 1.0f;
+
+                        camera.GetComponent<CameraController>().enabled = true;
+                        go1.gameObject.SetActive(true);
+                        go2.gameObject.SetActive(true);
+                        go3.gameObject.SetActive(true);
+                        go4.gameObject.SetActive(true);
+                        shop.SleepShop();
+                    }
+                    if (Input.GetKeyDown(KeyCode.Alpha2))
+                    {
+
+
+                        if (mascarillaPapel.lossMascarilla())
+                        {
+                            currentProtection = mascarillaPapel.getProtection();
+
+                        }
+
+
+                    }
+                    else if (Input.GetKeyDown(KeyCode.Alpha3))
+                    {
+
+
+                        if (mascarillaPlastico.lossMascarilla())
+                        {
+                            currentProtection = mascarillaPlastico.getProtection();
+
+                        }
+
+
+                    }
+                    else if (Input.GetKeyDown(KeyCode.Alpha4))
+                    {
+
+
+                        if (mascarillaFibra.lossMascarilla())
+                        {
+                            currentProtection = mascarillaFibra.getProtection();
+                        }
+
+
+                    }
+                    else if (Input.GetKeyDown(KeyCode.Alpha1))
+                    {
+
+                        if (gel.quitarUnidades())
+                        {
+
+                            currentProtection += 15f;
+                            if (currentProtection > maxProtection) currentProtection = maxProtection;
+                        }
+
+                    }
+                }
             
-            if (!toggleShop)
-            {
-                if (Time.timeScale == 0.0)
+
+            
+            
+
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Time.timeScale = 1.0f;
-
-                    camera.GetComponent<CameraController>().enabled = true;
-                    go1.gameObject.SetActive(true);
-                    go2.gameObject.SetActive(true);
-                    go3.gameObject.SetActive(true);
-                    go4.gameObject.SetActive(true);
-                    shop.SleepShop();
-                }
-                if (Input.GetKeyDown(KeyCode.Alpha2))
-                {
-
-
-                    if (mascarillaPapel.lossMascarilla())
-                    {
-                        currentProtection = mascarillaPapel.getProtection();
-
-                    }
-
-
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha3))
-                {
-
-
-                    if (mascarillaPlastico.lossMascarilla())
-                    {
-                        currentProtection = mascarillaPlastico.getProtection();
-
-                    }
-
-
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha4))
-                {
-
-
-                    if (mascarillaFibra.lossMascarilla())
-                    {
-                        currentProtection = mascarillaFibra.getProtection();
-                    }
-
-
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha1))
-                {
-
-                    if (gel.quitarUnidades())
+                    if (deletedStore)
                     {
 
-                        currentProtection += 15f;
-                        if (currentProtection > maxProtection) currentProtection = maxProtection;
-                    }
-
-                }
-            }
-
-            if (Input.GetKeyDown(KeyCode.J)){
-                toggleStop = !toggleStop;
-            }
-            if(toggleStop){
-                if (Time.timeScale == 1.0)
-                {
-                    Time.timeScale = 0.0f;
-                    for(int i = 0; i < 66; i++)
-                        objects[i].gameObject.GetComponent<Test_script>().enabled = false;
-                }
-                
-            }
-            if(!toggleStop){
-                if (Time.timeScale == 0.0)
-                {
-                    Time.timeScale = 1.0f;
-                    for(int i = 0; i < 66; i++)
-                        objects[i].gameObject.GetComponent<Test_script>().enabled = true;
-                }
-                
-            }
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (deletedStore)
-                {
-
-                    toggleShop = !toggleShop;
-                    deletedStore = !deletedStore;
-                }
-                else if (checkDistance(pharmacyList))
-                {
-                    toggleShop = !toggleShop;
-                    int inx = checkDistanceIndex(pharmacyList);
-                    if (currentProtection <= 0) {
-                        pharmacyList[inx].gameObject.SetActive(false);
-                        
+                        toggleShop = !toggleShop;
                         deletedStore = !deletedStore;
                     }
+                    else if (checkDistance(pharmacyList))
+                    {
+                        toggleShop = !toggleShop;
+                        int inx = checkDistanceIndex(pharmacyList);
+                        if (currentProtection <= 0) {
+                            pharmacyList[inx].gameObject.SetActive(false);
+                            
+                            deletedStore = !deletedStore;
+                        }
+                    }
+                    
                 }
                 
-            }
-            if (toggleShop)
-            {
-                if (Time.timeScale == 1.0)
+                if (toggleShop)
                 {
-                    Time.timeScale = 0.0f;
+                    if (Time.timeScale == 1.0)
+                    {
+                        Time.timeScale = 0.0f;
 
-                    camera.GetComponent<CameraController>().enabled = false;
-                    go1.gameObject.SetActive(false);
-                    go2.gameObject.SetActive(false);
-                    go3.gameObject.SetActive(false);
-                    go4.gameObject.SetActive(false);
-                    shop.Awake();
-                }
-                if (Input.GetKeyDown(KeyCode.Alpha2))
-                {
-                    if (money.checkMoney(10))
-                    {
-                        shop.buyMaskItem(mascarillaPapel);
-                        money.substractMoney(10);
+                        camera.GetComponent<CameraController>().enabled = false;
+                        go1.gameObject.SetActive(false);
+                        go2.gameObject.SetActive(false);
+                        go3.gameObject.SetActive(false);
+                        go4.gameObject.SetActive(false);
+                        shop.Awake();
                     }
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha3))
-                {
-                    if (money.checkMoney(50))
+                    if (Input.GetKeyDown(KeyCode.Alpha2))
                     {
-                        shop.buyMaskItem(mascarillaPlastico);
-                        money.substractMoney(50);
+                        if (money.checkMoney(10))
+                        {
+                            shop.buyMaskItem(mascarillaPapel);
+                            money.substractMoney(10);
+                        }
                     }
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha4))
-                {
-                    if (money.checkMoney(100))
+                    else if (Input.GetKeyDown(KeyCode.Alpha3))
                     {
-                        shop.buyMaskItem(mascarillaFibra);
-                        money.substractMoney(100);
+                        if (money.checkMoney(50))
+                        {
+                            shop.buyMaskItem(mascarillaPlastico);
+                            money.substractMoney(50);
+                        }
                     }
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha1))
-                {
-                    if (money.checkMoney(5))
+                    else if (Input.GetKeyDown(KeyCode.Alpha4))
                     {
-                        shop.buyGelItem(gel);
-                        money.substractMoney(5);
+                        if (money.checkMoney(100))
+                        {
+                            shop.buyMaskItem(mascarillaFibra);
+                            money.substractMoney(100);
+                        }
+                    }
+                    else if (Input.GetKeyDown(KeyCode.Alpha1))
+                    {
+                        if (money.checkMoney(5))
+                        {
+                            shop.buyGelItem(gel);
+                            money.substractMoney(5);
+                        }
                     }
                 }
             }
-
 
 
         }
+        
+        
         money.updateMoney();
     }
     void TakeDamage(float damage)
