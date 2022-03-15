@@ -22,6 +22,7 @@ public class Player_UI : MonoBehaviour
     public GameObject camera;
     public Money money;
     public GameObject[] pharmacyList;
+    
 
 
     private GameObject go1, go2, go3, go4;
@@ -29,7 +30,9 @@ public class Player_UI : MonoBehaviour
     private GUIStyle currentStyle;
     private Vector3 prev_position;
     private Transform transform;
-    private bool toggleShop, deletedStore;
+    private bool toggleShop, deletedStore, toggleStop;
+    private string[] objectNames;
+    private GameObject[] objects;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +55,13 @@ public class Player_UI : MonoBehaviour
         go4 = GameObject.Find("/Canvas/Gel");
         
         deletedStore = false;
+        toggleStop = false;
+
+        objectNames = new string[66];
+        objectNames[0] = "/Custom simple human_prefab_test";
+        for(int i = 1; i < 66 ;i++) objectNames[i] = "/Custom simple human_prefab_test ("+i+")";
+        objects = new GameObject[66];
+        for(int i = 0; i < 66; i++) objects[i] = GameObject.Find(objectNames[i]);
 
     }
     // Update is called once per frame
@@ -81,7 +91,7 @@ public class Player_UI : MonoBehaviour
             }
             prev_position = transform.position;
 
-
+            
             if (!toggleShop)
             {
                 if (Time.timeScale == 0.0)
@@ -95,7 +105,6 @@ public class Player_UI : MonoBehaviour
                     go4.gameObject.SetActive(true);
                     shop.SleepShop();
                 }
-
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
 
@@ -144,6 +153,27 @@ public class Player_UI : MonoBehaviour
                 }
             }
 
+            if (Input.GetKeyDown(KeyCode.J)){
+                toggleStop = !toggleStop;
+            }
+            if(toggleStop){
+                if (Time.timeScale == 1.0)
+                {
+                    Time.timeScale = 0.0f;
+                    for(int i = 0; i < 66; i++)
+                        objects[i].gameObject.GetComponent<Test_script>().enabled = false;
+                }
+                
+            }
+            if(!toggleStop){
+                if (Time.timeScale == 0.0)
+                {
+                    Time.timeScale = 1.0f;
+                    for(int i = 0; i < 66; i++)
+                        objects[i].gameObject.GetComponent<Test_script>().enabled = true;
+                }
+                
+            }
 
             if (Input.GetKeyDown(KeyCode.E))
             {
